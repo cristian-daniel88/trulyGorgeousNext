@@ -26,7 +26,7 @@ function AboutUs() {
       </style>
 
 
-      <AlterationsContainer style={{"height":'100vh'}}>
+      <AlterationsContainer style={{"height":'80vh'}}>
        
         <LinkA href={"/our-boutique"}>
           <BoxAlterations style={{'width':"250px", "marginBottom":'20px', "marginTop":'20px'}}>Our Boutique</BoxAlterations>

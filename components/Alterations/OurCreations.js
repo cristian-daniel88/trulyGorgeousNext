@@ -99,17 +99,98 @@ function OurCreations() {
             </DescriptionOurCreations>
           </OurCreationsBox3>
         </OurCreationsBox>
+      
+      {/* 2 */}
+      
+
+      <OurCreationsBox>
+          <OurCreationsBox2>
+            <OurCreationsBox1
+              src={ourCreations[2].imgs[0]}
+              onClick={() => click(ourCreations[2].imgs[0], true)}
+
+              style={{width:"450px"}}
+            />
+
+            <OurCreationsBox4>
+              <CartGridOurCreations>
+                {ourCreations[2].imgs.map((j, p) => (
+                  <CartOurCreations
+                    key={p}
+                    src={j}
+                    onClick={() => click(j, true)}
+                  ></CartOurCreations>
+                ))}
+              </CartGridOurCreations>
+            </OurCreationsBox4>
+          </OurCreationsBox2>
+
+          <OurCreationsBox3>
+            <DescriptionOurCreations style={{'marginRight':"1%"}}>
+              {ourCreations[0].description}
+            </DescriptionOurCreations>
+          </OurCreationsBox3>
+        </OurCreationsBox>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </OurCreationsContainer>
+
+    
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       {ourCreations.map((v, i) => (
         <>
-          <ProductContainerPhone>
+          <ProductContainerPhone key={i}>
             <>
               <SliderContainerPhone a={v} />
             </>
           </ProductContainerPhone>
         </>
       ))}
+
+      
+
+
     </DesignersContainer>
   );
 }

@@ -4,8 +4,6 @@ import { useDispatch } from "react-redux";
 import { designers } from "../../database/designers";
 import { clickPopUpPhoto } from "../../redux/popUpPhotoDesigner/popUpPhotoDesignerActions";
 
-import SliderContainer from "../SliderContainer/SliderContainer";
-import SliderContainerPhone from "../SliderContainerPhone/SliderContainerPhone";
 import { ImagenContainerDesigner, ImgDesignerModel, PhoneCard } from "../SliderContainerPhone/SliderContainerPhoneStyles";
 import { Cart, CartGrid } from "../weddingDresses/WeddingDressesStyles";
 
@@ -15,7 +13,7 @@ import {
   ProductContainerPhone,
 } from "./DesignersStyles";
 
-import MainPhoto from "./MainPhoto";
+
 
 function LusanMandongus() {
   const ronaldModelsObject = designers[5].models;

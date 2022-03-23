@@ -24,6 +24,8 @@ export const ourCreations = [
     uid:'1',
     description: "This bride wanted to be slightly more covered, so we made beaded matching sleeves.",
     imgs: [
+      
+      'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646949712/ourCreations/1/bride-creations-8_nde0wa.jpg',
 
       'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646949712/ourCreations/1/bride-creations-9_aqtf0x.jpg',
 
@@ -31,7 +33,6 @@ export const ourCreations = [
       
       'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646949712/ourCreations/1/bride-creations-7_wulupk.jpg',
 
-      'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646949712/ourCreations/1/bride-creations-8_nde0wa.jpg',
 
     ],
   },

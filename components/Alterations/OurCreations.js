@@ -15,6 +15,7 @@ import {
 } from "../Designers/DesignersStyles";
 
 import MainPhoto from '../Designers/MainPhoto'
+import { DescriptionOurCreations, OurCreationsBox, OurCreationsBox1, OurCreationsBox2, OurCreationsBox3, OurCreationsBox4, OurCreationsContainer } from "./OurCreationsStyles";
 
 function OurCreations() {
   
@@ -23,20 +24,59 @@ function OurCreations() {
     <DesignersContainer>
       <NameDesigner>Our Creations</NameDesigner>
 
-      {ourCreations.map((value, index) => (
-        <ProductContainer key={index}>
-          <MainPhoto front={value.imgs[0]} back={value.imgs[1]} key={index} src={value.imgs[0]}></MainPhoto>
-          <GridPhotoContainer>
+      <OurCreationsContainer>
 
-             <SliderContainer photoMain={value.imgs} i={index} by={0} s/> 
+          {ourCreations.map((v, i) => (
+             <>
+               <OurCreationsBox>
 
-            <ModelNameTitle>{value.description}</ModelNameTitle>
-          
-          </GridPhotoContainer>
-          
-        </ProductContainer>
+
+
+
+                  <OurCreationsBox2>
+
+                  <OurCreationsBox1 src={v.imgs[0]}/>
+
+
+                  <OurCreationsBox4 >
+                    Grid
+                  </OurCreationsBox4>
+                  
+                  </OurCreationsBox2>
+                  
+                  
+                  <OurCreationsBox3 >
+
+                    <DescriptionOurCreations>description</DescriptionOurCreations>
+                  </OurCreationsBox3>
+
+
+
+                  
+               </OurCreationsBox>
+              
+             </>
+          ))}
+         
       
-      ))}
+
+
+      </OurCreationsContainer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       
 
      {

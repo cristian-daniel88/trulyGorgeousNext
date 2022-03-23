@@ -245,7 +245,7 @@ function OurCreations() {
                     key={p}
                     src={j}
                     onClick={() => click(j, true)}
-                    
+
                   ></CartOurCreations>
                 ))}
               </CartGridOurCreations>
@@ -254,6 +254,7 @@ function OurCreations() {
 
           <OurCreationsBox3>
             <DescriptionOurCreations style={{'marginRight':"5%"}} >
+              {ourCreations[6].description}
             </DescriptionOurCreations>
           </OurCreationsBox3>
         </OurCreationsBox>

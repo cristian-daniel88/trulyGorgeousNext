@@ -163,9 +163,12 @@ margin-bottom: 20px;
 `
 
 export const IframeFooter = styled.iframe`
-border: none;
+
 height: 100%;
 width: 100%;
+border:solid 3px white ;
+
+border-radius:4px ;
 
 `
 

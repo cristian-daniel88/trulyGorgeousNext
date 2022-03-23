@@ -259,8 +259,39 @@ function OurCreations() {
           </OurCreationsBox3>
         </OurCreationsBox>
 
+        {/* 7 */}
 
 
+         
+        <OurCreationsBox>
+          <OurCreationsBox2>
+            <OurCreationsBox1
+              src={ourCreations[7].imgs[0]}
+              onClick={() => click(ourCreations[7].imgs[0], true)}
+
+              style={{width:"400px"}}
+            />
+
+            <OurCreationsBox4>
+              <CartGridOurCreations>
+                {ourCreations[7].imgs.map((j, p) => (
+                  <CartOurCreations
+                    key={p}
+                    src={j}
+                    onClick={() => click(j, true)}
+
+                  ></CartOurCreations>
+                ))}
+              </CartGridOurCreations>
+            </OurCreationsBox4>
+          </OurCreationsBox2>
+
+          <OurCreationsBox3>
+            <DescriptionOurCreations style={{'marginRight':"3%"}} >
+              {ourCreations[7].description}
+            </DescriptionOurCreations>
+          </OurCreationsBox3>
+        </OurCreationsBox>
 
 
 

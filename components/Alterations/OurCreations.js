@@ -32,7 +32,7 @@ function OurCreations() {
 
   return (
     <DesignersContainer>
-      <NameDesigner>Our Creations</NameDesigner>
+      <NameDesigner style={{'marginTop':'50px'}}>Our Creations</NameDesigner>
 
       <OurCreationsContainer>
 

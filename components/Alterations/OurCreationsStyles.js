@@ -20,10 +20,10 @@ padding: 0 10%;
 export const OurCreationsBox = styled.div`
 width:100%;
 
-border: solid 1px #e8d8d8;
+border: solid 2px #e8d8d8;
 
 padding:5% 0%;
-margin-top:50px ;
+margin-top:20px ;
 margin-bottom:50px ;
 border-radius:10px ;
 

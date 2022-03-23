@@ -13,14 +13,13 @@ function PopUpPhotoDesignerOurCreations() {
   }
   return (
     <PopUpPhotoOurCreations toggle={popUpPhoto.hidden ? 'true' : 'false'} onClick={()=> {click('', false)}}>
-      <MarcoPhotoOurCreations w={popUpPhoto.imgUrl} anchoOurBrides={popUpPhoto.imgUrl.split('/')[7] == 'ourBrides' ? 'true' : 'false'}>
+      <MarcoPhotoOurCreations  resizePadding={popUpPhoto.imgUrl} >
       <CloseContainerOurCreations onClick={()=>click('', false)}>
         <CloseIconOurCreations/>
       </CloseContainerOurCreations>
       
-      {console.log(popUpPhoto.imgUrl.split('/')[7])}
-
-      {popUpPhoto.imgUrl.split('/')[7] == 'ourBrides' ? (<><PhotoPopUpOurCreations img={popUpPhoto.imgUrl} width='90%'/></>) : (<><PhotoPopUpOurCreations src={popUpPhoto.imgUrl}/></>)}
+      
+    <PhotoPopUpOurCreations src={popUpPhoto.imgUrl}/>
       </MarcoPhotoOurCreations>
     </PopUpPhotoOurCreations>
   )

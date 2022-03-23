@@ -45,6 +45,10 @@ export const OurCreationsBox3 = styled.div`
   display: flex;
   justify-content: right;
   margin-top: 20px;
+
+  @media screen and (max-width: 400px) {
+    margin-top:0 ;
+  }
 `;
 
 export const OurCreationsBox4 = styled.div`
@@ -59,12 +63,18 @@ export const OurCreationsBox4 = styled.div`
 
 export const DescriptionOurCreations = styled.p`
   width: 60%;
-
   margin-right: 3.5%;
-  font-size: 15px;
-
+  font-size: 17px;
   color: rgba(73, 66, 97, 0.71);
   padding: 10px;
+
+
+
+
+
+
+  
+    
 
   @media screen and (max-width: 1300px) {
     width: 100%;

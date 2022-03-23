@@ -37,7 +37,7 @@ function OurCreations() {
 
   return (
     <DesignersContainer>
-      <NameDesigner style={{ marginTop: "50px" }}>Our Creations</NameDesigner>
+      <NameDesigner style={{ marginTop: "30px" }}>Our Creations</NameDesigner>
 
       <OurCreationsContainer>
         {/* 0 */}
@@ -62,8 +62,8 @@ function OurCreations() {
             </OurCreationsBox4>
           </OurCreationsBox2>
 
-          <OurCreationsBox3>
-            <DescriptionOurCreations>
+          <OurCreationsBox3 >
+            <DescriptionOurCreations >
               {ourCreations[0].description}
             </DescriptionOurCreations>
           </OurCreationsBox3>
@@ -102,7 +102,6 @@ function OurCreations() {
       
       {/* 2 */}
       
-
       <OurCreationsBox>
           <OurCreationsBox2>
             <OurCreationsBox1
@@ -128,6 +127,133 @@ function OurCreations() {
           <OurCreationsBox3>
             <DescriptionOurCreations style={{'marginRight':"1%"}}>
               {ourCreations[0].description}
+            </DescriptionOurCreations>
+          </OurCreationsBox3>
+        </OurCreationsBox>
+
+        {/* 3 */}
+
+        <OurCreationsBox>
+          <OurCreationsBox2>
+            <OurCreationsBox1
+              src={ourCreations[3].imgs[0]}
+              onClick={() => click(ourCreations[3].imgs[0], true)}
+
+              style={{width:"450px"}}
+            />
+
+            <OurCreationsBox4>
+              <CartGridOurCreations>
+                {ourCreations[3].imgs.map((j, p) => (
+                  <CartOurCreations
+                    key={p}
+                    src={j}
+                    onClick={() => click(j, true)}
+                  ></CartOurCreations>
+                ))}
+              </CartGridOurCreations>
+            </OurCreationsBox4>
+          </OurCreationsBox2>
+
+          <OurCreationsBox3>
+            <DescriptionOurCreations style={{'marginRight':"1%"}}>
+              {ourCreations[0].description}
+            </DescriptionOurCreations>
+          </OurCreationsBox3>
+        </OurCreationsBox>
+
+
+        {/* 4 */}
+
+        <OurCreationsBox>
+          <OurCreationsBox2>
+            <OurCreationsBox1
+              src={ourCreations[4].imgs[0]}
+              onClick={() => click(ourCreations[4].imgs[0], true)}
+
+              style={{width:"450px"}}
+            />
+
+            <OurCreationsBox4>
+              <CartGridOurCreations>
+                {ourCreations[4].imgs.map((j, p) => (
+                  <CartOurCreations
+                    key={p}
+                    src={j}
+                    onClick={() => click(j, true)}
+                  ></CartOurCreations>
+                ))}
+              </CartGridOurCreations>
+            </OurCreationsBox4>
+          </OurCreationsBox2>
+
+          <OurCreationsBox3>
+            <DescriptionOurCreations style={{'marginRight':"1%"}}>
+              {ourCreations[0].description}
+            </DescriptionOurCreations>
+          </OurCreationsBox3>
+        </OurCreationsBox>
+
+
+        {/* 5 */}
+
+        <OurCreationsBox>
+          <OurCreationsBox2>
+            <OurCreationsBox1
+              src={ourCreations[5].imgs[0]}
+              onClick={() => click(ourCreations[5].imgs[0], true)}
+
+              style={{width:"450px"}}
+            />
+
+            <OurCreationsBox4>
+              <CartGridOurCreations>
+                {ourCreations[5].imgs.map((j, p) => (
+                  <CartOurCreations
+                    key={p}
+                    src={j}
+                    onClick={() => click(j, true)}
+                  ></CartOurCreations>
+                ))}
+              </CartGridOurCreations>
+            </OurCreationsBox4>
+          </OurCreationsBox2>
+
+          <OurCreationsBox3>
+            <DescriptionOurCreations style={{'marginRight':"1%"}}>
+              {ourCreations[0].description}
+            </DescriptionOurCreations>
+          </OurCreationsBox3>
+        </OurCreationsBox>
+
+
+        {/* 6 */}
+
+        <OurCreationsBox>
+          <OurCreationsBox2>
+            <OurCreationsBox1
+              src={ourCreations[6].imgs[0]}
+              onClick={() => click(ourCreations[6].imgs[0], true)}
+
+              style={{width:"250px"}}
+            />
+
+            <OurCreationsBox4>
+              <CartGridOurCreations>
+                {ourCreations[6].imgs.map((j, p) => (
+                  <CartOurCreations
+                    key={p}
+                    src={j}
+                    onClick={() => click(j, true)}
+                    
+                  ></CartOurCreations>
+                ))}
+              </CartGridOurCreations>
+            </OurCreationsBox4>
+          </OurCreationsBox2>
+
+          <OurCreationsBox3>
+            <DescriptionOurCreations style={{'marginRight':"5%"}} >
             </DescriptionOurCreations>
           </OurCreationsBox3>
         </OurCreationsBox>

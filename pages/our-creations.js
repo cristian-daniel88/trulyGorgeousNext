@@ -6,16 +6,18 @@ import { Provider } from "react-redux";
 import { GlobalStyles } from '../styles/GlobalStyles';
 import Head from 'next/head';
 import Top from '../components/Top/Top';
-import ContactContainer from '../components/ContactContainer/ContactContainer';
+
 import Footer from '../components/Footer/Footer';
 import ToggleMenu from '../components/ToggleMenu/ToggleMenu';
 import Cover from '../components/Cover/Cover';
 import Aside from '../components/Aside/Aside';
 import AssetsBottom from '../components/AssetsBottom/AssetsBottom';
 import OurCreations from '../components/Alterations/OurCreations';
-import PopUpPhotoDesigner from '../components/PopUpPhotoDesigner/PopUpPhotoDesigner';
+
+import PopUpPhotoDesignerOurCreations from '../components/Alterations/PopUpPhotoDesignerOurCreations';
 
 function ourCreations() {
+  
   return (
     <>
     <Head>
@@ -30,7 +32,7 @@ function ourCreations() {
     <Nav></Nav>
     <Top/>
     <Cover/>
-    <PopUpPhotoDesigner />
+    <PopUpPhotoDesignerOurCreations/>
 
     <ToggleMenu/>
  

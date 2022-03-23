@@ -15,10 +15,20 @@ import {
 } from "../Designers/DesignersStyles";
 
 import MainPhoto from '../Designers/MainPhoto'
-import { DescriptionOurCreations, OurCreationsBox, OurCreationsBox1, OurCreationsBox2, OurCreationsBox3, OurCreationsBox4, OurCreationsContainer } from "./OurCreationsStyles";
+import { CartGridOurCreations, CartOurCreations, DescriptionOurCreations, OurCreationsBox, OurCreationsBox1, OurCreationsBox2, OurCreationsBox3, OurCreationsBox4, OurCreationsContainer } from "./OurCreationsStyles";
+import { useDispatch } from "react-redux";
+import { clickPopUpPhoto } from "../../redux/popUpPhotoDesigner/popUpPhotoDesignerActions";
 
 function OurCreations() {
   
+  const dispatch = useDispatch()
+
+ 
+
+  const click = (value, booleano) => {
+  
+    dispatch(clickPopUpPhoto(value, booleano))
+  }
 
   return (
     <DesignersContainer>
@@ -26,8 +36,9 @@ function OurCreations() {
 
       <OurCreationsContainer>
 
-          {ourCreations.map((v, i) => (
-             <>
+      
+             {/* 0 */}
+
                <OurCreationsBox>
 
 
@@ -35,11 +46,18 @@ function OurCreations() {
 
                   <OurCreationsBox2>
 
-                  <OurCreationsBox1 src={v.imgs[0]}/>
+                  <OurCreationsBox1 src={ourCreations[0].imgs[0]} onClick={()=> click(ourCreations[0].imgs[0], true)}/>
 
 
                   <OurCreationsBox4 >
-                    Grid
+                    <CartGridOurCreations>
+                      {ourCreations[0].imgs.map((j , p) => (
+
+                        <CartOurCreations key={p} src={j} onClick={()=> click(j, true)} >
+
+                        </CartOurCreations>
+                      ))}
+                    </CartGridOurCreations>
                   </OurCreationsBox4>
                   
                   </OurCreationsBox2>
@@ -47,7 +65,7 @@ function OurCreations() {
                   
                   <OurCreationsBox3 >
 
-                    <DescriptionOurCreations>description</DescriptionOurCreations>
+                    <DescriptionOurCreations>{ourCreations[0].description}</DescriptionOurCreations>
                   </OurCreationsBox3>
 
 
@@ -55,8 +73,8 @@ function OurCreations() {
                   
                </OurCreationsBox>
               
-             </>
-          ))}
+             
+        
          
       
 

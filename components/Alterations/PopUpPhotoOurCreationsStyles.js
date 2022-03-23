@@ -30,6 +30,8 @@ background-color:black ;
 box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 padding: 30px;
 padding:${({resizePadding}) => resizePadding == 'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646949721/ourCreations/6/bridal-creations-34_hwed35.jpg' && "45px"} ;
+padding:${({resizePadding}) => resizePadding == 'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646949722/ourCreations/8/bride-creations-38_mdfcdp.jpg' && "60px"} ;
+
 
 
 

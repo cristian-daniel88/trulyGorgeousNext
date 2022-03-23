@@ -7,115 +7,109 @@ import SliderContainerPhone from "../SliderContainerPhone/SliderContainerPhone";
 import {
   DesignersContainer,
   GridPhotoContainer,
-
   ModelNameTitle,
   NameDesigner,
   ProductContainer,
   ProductContainerPhone,
 } from "../Designers/DesignersStyles";
 
-import MainPhoto from '../Designers/MainPhoto'
-import { CartGridOurCreations, CartOurCreations, DescriptionOurCreations, OurCreationsBox, OurCreationsBox1, OurCreationsBox2, OurCreationsBox3, OurCreationsBox4, OurCreationsContainer } from "./OurCreationsStyles";
+import MainPhoto from "../Designers/MainPhoto";
+import {
+  CartGridOurCreations,
+  CartOurCreations,
+  DescriptionOurCreations,
+  OurCreationsBox,
+  OurCreationsBox1,
+  OurCreationsBox2,
+  OurCreationsBox3,
+  OurCreationsBox4,
+  OurCreationsContainer,
+} from "./OurCreationsStyles";
 import { useDispatch } from "react-redux";
 import { clickPopUpPhoto } from "../../redux/popUpPhotoDesigner/popUpPhotoDesignerActions";
 
 function OurCreations() {
-  
-  const dispatch = useDispatch()
-
- 
+  const dispatch = useDispatch();
 
   const click = (value, booleano) => {
-  
-    dispatch(clickPopUpPhoto(value, booleano))
-  }
+    dispatch(clickPopUpPhoto(value, booleano));
+  };
 
   return (
     <DesignersContainer>
-      <NameDesigner style={{'marginTop':'50px'}}>Our Creations</NameDesigner>
+      <NameDesigner style={{ marginTop: "50px" }}>Our Creations</NameDesigner>
 
       <OurCreationsContainer>
+        {/* 0 */}
 
-      
-             {/* 0 */}
+        <OurCreationsBox>
+          <OurCreationsBox2>
+            <OurCreationsBox1
+              src={ourCreations[0].imgs[0]}
+              onClick={() => click(ourCreations[0].imgs[0], true)}
+            />
 
-               <OurCreationsBox>
+            <OurCreationsBox4>
+              <CartGridOurCreations>
+                {ourCreations[0].imgs.map((j, p) => (
+                  <CartOurCreations
+                    key={p}
+                    src={j}
+                    onClick={() => click(j, true)}
+                  ></CartOurCreations>
+                ))}
+              </CartGridOurCreations>
+            </OurCreationsBox4>
+          </OurCreationsBox2>
 
+          <OurCreationsBox3>
+            <DescriptionOurCreations>
+              {ourCreations[0].description}
+            </DescriptionOurCreations>
+          </OurCreationsBox3>
+        </OurCreationsBox>
 
+        {/* 1 */}
 
+        <OurCreationsBox>
+          <OurCreationsBox2>
+            <OurCreationsBox1
+              src={ourCreations[1].imgs[0]}
+              onClick={() => click(ourCreations[1].imgs[0], true)}
 
-                  <OurCreationsBox2>
+              style={{width:"450px"}}
+            />
 
-                  <OurCreationsBox1 src={ourCreations[0].imgs[0]} onClick={()=> click(ourCreations[0].imgs[0], true)}/>
+            <OurCreationsBox4>
+              <CartGridOurCreations>
+                {ourCreations[1].imgs.map((j, p) => (
+                  <CartOurCreations
+                    key={p}
+                    src={j}
+                    onClick={() => click(j, true)}
+                  ></CartOurCreations>
+                ))}
+              </CartGridOurCreations>
+            </OurCreationsBox4>
+          </OurCreationsBox2>
 
-
-                  <OurCreationsBox4 >
-                    <CartGridOurCreations>
-                      {ourCreations[0].imgs.map((j , p) => (
-
-                        <CartOurCreations key={p} src={j} onClick={()=> click(j, true)} >
-
-                        </CartOurCreations>
-                      ))}
-                    </CartGridOurCreations>
-                  </OurCreationsBox4>
-                  
-                  </OurCreationsBox2>
-                  
-                  
-                  <OurCreationsBox3 >
-
-                    <DescriptionOurCreations>{ourCreations[0].description}</DescriptionOurCreations>
-                  </OurCreationsBox3>
-
-
-
-                  
-               </OurCreationsBox>
-              
-             
-        
-         
-      
-
-
+          <OurCreationsBox3>
+            <DescriptionOurCreations style={{'marginRight':"1%"}}>
+              {ourCreations[0].description}
+            </DescriptionOurCreations>
+          </OurCreationsBox3>
+        </OurCreationsBox>
       </OurCreationsContainer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-
-     {
-       ourCreations.map((v, i) => (
-          
-          
+      {ourCreations.map((v, i) => (
+        <>
+          <ProductContainerPhone>
             <>
-            <ProductContainerPhone>
-     
-              
-              <>
-               <SliderContainerPhone a={v}/>
-              </>
-         
-            </ProductContainerPhone>
+              <SliderContainerPhone a={v} />
             </>
-          
-
-       ))
-
-     }
+          </ProductContainerPhone>
+        </>
+      ))}
     </DesignersContainer>
   );
 }

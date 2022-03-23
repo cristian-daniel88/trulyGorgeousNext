@@ -95,7 +95,7 @@ function OurCreations() {
 
           <OurCreationsBox3>
             <DescriptionOurCreations style={{'marginRight':"1%"}}>
-              {ourCreations[0].description}
+              {ourCreations[1].description}
             </DescriptionOurCreations>
           </OurCreationsBox3>
         </OurCreationsBox>
@@ -126,7 +126,7 @@ function OurCreations() {
 
           <OurCreationsBox3>
             <DescriptionOurCreations style={{'marginRight':"1%"}}>
-              {ourCreations[0].description}
+              {ourCreations[2].description}
             </DescriptionOurCreations>
           </OurCreationsBox3>
         </OurCreationsBox>
@@ -157,7 +157,7 @@ function OurCreations() {
 
           <OurCreationsBox3>
             <DescriptionOurCreations style={{'marginRight':"1%"}}>
-              {ourCreations[0].description}
+              {ourCreations[3].description}
             </DescriptionOurCreations>
           </OurCreationsBox3>
         </OurCreationsBox>
@@ -189,7 +189,7 @@ function OurCreations() {
 
           <OurCreationsBox3>
             <DescriptionOurCreations style={{'marginRight':"1%"}}>
-              {ourCreations[0].description}
+              {ourCreations[4].description}
             </DescriptionOurCreations>
           </OurCreationsBox3>
         </OurCreationsBox>
@@ -221,7 +221,7 @@ function OurCreations() {
 
           <OurCreationsBox3>
             <DescriptionOurCreations style={{'marginRight':"1%"}}>
-              {ourCreations[0].description}
+              {ourCreations[5].description}
             </DescriptionOurCreations>
           </OurCreationsBox3>
         </OurCreationsBox>
@@ -354,13 +354,44 @@ function OurCreations() {
 
           <OurCreationsBox3>
             <DescriptionOurCreations style={{'marginRight':"2%"}} >
-              {ourCreations[8].description}
+              {ourCreations[9].description}
             </DescriptionOurCreations>
           </OurCreationsBox3>
         </OurCreationsBox>
 
 
+        {/* 10 */}
 
+
+        <OurCreationsBox>
+          <OurCreationsBox2>
+            <OurCreationsBox1
+              src={ourCreations[10].imgs[0]}
+              onClick={() => click(ourCreations[10].imgs[0], true)}
+
+              style={{width:"300px"}}
+            />
+
+            <OurCreationsBox4>
+              <CartGridOurCreations>
+                {ourCreations[10].imgs.map((j, p) => (
+                  <CartOurCreations
+                    key={p}
+                    src={j}
+                    onClick={() => click(j, true)}
+
+                  ></CartOurCreations>
+                ))}
+              </CartGridOurCreations>
+            </OurCreationsBox4>
+          </OurCreationsBox2>
+
+          <OurCreationsBox3>
+            <DescriptionOurCreations style={{'marginRight':"7%"}} >
+              {ourCreations[10].description}
+            </DescriptionOurCreations>
+          </OurCreationsBox3>
+        </OurCreationsBox>
 
 
 

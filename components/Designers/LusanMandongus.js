@@ -6,65 +6,55 @@ import { clickPopUpPhoto } from "../../redux/popUpPhotoDesigner/popUpPhotoDesign
 
 import SliderContainer from "../SliderContainer/SliderContainer";
 import SliderContainerPhone from "../SliderContainerPhone/SliderContainerPhone";
+import { ImagenContainerDesigner, ImgDesignerModel, PhoneCard } from "../SliderContainerPhone/SliderContainerPhoneStyles";
 import { Cart, CartGrid } from "../weddingDresses/WeddingDressesStyles";
 
 import {
   DesignersContainer,
-  GridPhotoContainer,
-
-  ModelNameTitle,
   NameDesigner,
-  ProductContainer,
   ProductContainerPhone,
 } from "./DesignersStyles";
 
-import MainPhoto from './MainPhoto'
+import MainPhoto from "./MainPhoto";
 
 function LusanMandongus() {
   const ronaldModelsObject = designers[5].models;
-  const dispatch = useDispatch()
-
- 
+  const dispatch = useDispatch();
 
   const click = (value, booleano) => {
-  
-    dispatch(clickPopUpPhoto(value, booleano))
-  }
-
+    dispatch(clickPopUpPhoto(value, booleano));
+  };
 
   return (
     <DesignersContainer>
       <NameDesigner>Lusan Mandongus</NameDesigner>
 
       <CartGrid>
-          { ronaldModelsObject.map((v, i) => (
+        {ronaldModelsObject.map((v, i) => (
+          <Cart
+            img={v.imgs}
+            key={i}
+            onClick={() => click(v.imgs[0], true)}
+          ></Cart>
+        ))}
+      </CartGrid>
 
-            <Cart img={v.imgs} key={i} onClick={()=> click(v.imgs[0], true)}>
-              
-            </Cart>
-          ))}
-       
-        </CartGrid>
-
-     {
-       ronaldModelsObject.map((v, i) => (
-          
-          
+      {ronaldModelsObject.map((v, i) => (
+        <>
+          <ProductContainerPhone style={{ marginBottom: "50px" }} key={i}>
             <>
-            <ProductContainerPhone style={{'marginBottom':'50px'}} key={i}>
-     
-              
-              <>
-               <SliderContainerPhone a={v}/>
-              </>
-         
-            </ProductContainerPhone>
+              <PhoneCard>
+                <ImagenContainerDesigner>
+                  <ImgDesignerModel
+                    img={v.imgs[0]}
+                  
+                  />
+                </ImagenContainerDesigner>
+              </PhoneCard>
             </>
-          
-
-       ))
-
-     }
+          </ProductContainerPhone>
+        </>
+      ))}
     </DesignersContainer>
   );
 }

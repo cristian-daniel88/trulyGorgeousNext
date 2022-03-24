@@ -861,6 +861,322 @@ function OurCreations() {
         </OurCreationsBox>
 
 
+        {/* 25 */}
+
+        <OurCreationsBox>
+          <OurCreationsBox2>
+            <OurCreationsBox1
+              src={ourCreations[25].imgs[0]}
+              onClick={() => click(ourCreations[25].imgs[0], true)}
+
+              style={{width:"450px"}}
+            />
+
+            <OurCreationsBox4>
+              <CartGridOurCreations>
+                {ourCreations[25].imgs.map((j, p) => (
+                  <CartOurCreations
+                    key={p}
+                    src={j}
+                    onClick={() => click(j, true)}
+
+                  ></CartOurCreations>
+                ))}
+              </CartGridOurCreations>
+            </OurCreationsBox4>
+          </OurCreationsBox2>
+
+          <OurCreationsBox3>
+            <DescriptionOurCreations style={{'marginRight':"0%"}} >
+              {ourCreations[25].description}
+            </DescriptionOurCreations>
+          </OurCreationsBox3>
+        </OurCreationsBox>
+
+
+        {/* 26 */}
+
+
+        <OurCreationsBox>
+          <OurCreationsBox2>
+            <OurCreationsBox1
+              src={ourCreations[26].imgs[0]}
+              onClick={() => click(ourCreations[26].imgs[0], true)}
+
+              style={{width:"450px"}}
+            />
+
+            <OurCreationsBox4>
+              <CartGridOurCreations>
+                {ourCreations[26].imgs.map((j, p) => (
+                  <CartOurCreations
+                    key={p}
+                    src={j}
+                    onClick={() => click(j, true)}
+
+                  ></CartOurCreations>
+                ))}
+              </CartGridOurCreations>
+            </OurCreationsBox4>
+          </OurCreationsBox2>
+
+          <OurCreationsBox3>
+            <DescriptionOurCreations style={{'marginRight':"0%"}} >
+              {ourCreations[26].description}
+            </DescriptionOurCreations>
+          </OurCreationsBox3>
+        </OurCreationsBox>
+
+
+        {/* 27 */}
+
+
+        <OurCreationsBox>
+          <OurCreationsBox2>
+            <OurCreationsBox1
+              src={ourCreations[27].imgs[0]}
+              onClick={() => click(ourCreations[27].imgs[0], true)}
+
+              style={{width:"450px"}}
+            />
+
+            <OurCreationsBox4>
+              <CartGridOurCreations>
+                {ourCreations[27].imgs.map((j, p) => (
+                  <CartOurCreations
+                    key={p}
+                    src={j}
+                    onClick={() => click(j, true)}
+
+                  ></CartOurCreations>
+                ))}
+              </CartGridOurCreations>
+            </OurCreationsBox4>
+          </OurCreationsBox2>
+
+          <OurCreationsBox3>
+            <DescriptionOurCreations style={{'marginRight':"1%"}} >
+              {ourCreations[27].description}
+            </DescriptionOurCreations>
+          </OurCreationsBox3>
+        </OurCreationsBox>
+
+
+        {/* 28 */}
+
+        <OurCreationsBox>
+          <OurCreationsBox2>
+            <OurCreationsBox1
+              src={ourCreations[28].imgs[0]}
+              onClick={() => click(ourCreations[28].imgs[0], true)}
+
+              style={{width:"400px"}}
+            />
+
+            <OurCreationsBox4>
+              <CartGridOurCreations>
+                {ourCreations[28].imgs.map((j, p) => (
+                  <CartOurCreations
+                    key={p}
+                    src={j}
+                    onClick={() => click(j, true)}
+
+                  ></CartOurCreations>
+                ))}
+              </CartGridOurCreations>
+            </OurCreationsBox4>
+          </OurCreationsBox2>
+
+          <OurCreationsBox3>
+            <DescriptionOurCreations style={{'marginRight':"3%"}} >
+              {ourCreations[28].description}
+            </DescriptionOurCreations>
+          </OurCreationsBox3>
+        </OurCreationsBox>
+
+
+        {/* 29 */}
+
+        <OurCreationsBox>
+          <OurCreationsBox2>
+            <OurCreationsBox1
+              src={ourCreations[29].imgs[0]}
+              onClick={() => click(ourCreations[29].imgs[0], true)}
+
+              style={{width:"450px"}}
+            />
+
+            <OurCreationsBox4>
+              <CartGridOurCreations>
+                {ourCreations[29].imgs.map((j, p) => (
+                  <CartOurCreations
+                    key={p}
+                    src={j}
+                    onClick={() => click(j, true)}
+
+                  ></CartOurCreations>
+                ))}
+              </CartGridOurCreations>
+            </OurCreationsBox4>
+          </OurCreationsBox2>
+
+          <OurCreationsBox3>
+            <DescriptionOurCreations style={{'marginRight':"1%"}} >
+              {ourCreations[29].description}
+            </DescriptionOurCreations>
+          </OurCreationsBox3>
+        </OurCreationsBox>
+
+
+        {/* 30 */}
+
+        <OurCreationsBox>
+          <OurCreationsBox2>
+            <OurCreationsBox1
+              src={ourCreations[30].imgs[0]}
+              onClick={() => click(ourCreations[30].imgs[0], true)}
+
+              style={{width:"450px"}}
+            />
+
+            <OurCreationsBox4>
+              <CartGridOurCreations>
+                {ourCreations[30].imgs.map((j, p) => (
+                  <CartOurCreations
+                    key={p}
+                    src={j}
+                    onClick={() => click(j, true)}
+
+                  ></CartOurCreations>
+                ))}
+              </CartGridOurCreations>
+            </OurCreationsBox4>
+          </OurCreationsBox2>
+
+          <OurCreationsBox3>
+            <DescriptionOurCreations style={{'marginRight':"1%"}} >
+              {ourCreations[30].description}
+            </DescriptionOurCreations>
+          </OurCreationsBox3>
+        </OurCreationsBox>
+
+
+        {/* 31 */}
+
+
+        <OurCreationsBox>
+          <OurCreationsBox2>
+            <OurCreationsBox1
+              src={ourCreations[31].imgs[0]}
+              onClick={() => click(ourCreations[31].imgs[0], true)}
+
+              style={{width:"400px"}}
+            />
+
+            <OurCreationsBox4>
+              <CartGridOurCreations>
+                {ourCreations[31].imgs.map((j, p) => (
+                  <CartOurCreations
+                    key={p}
+                    src={j}
+                    onClick={() => click(j, true)}
+
+                  ></CartOurCreations>
+                ))}
+              </CartGridOurCreations>
+            </OurCreationsBox4>
+          </OurCreationsBox2>
+
+          <OurCreationsBox3>
+            <DescriptionOurCreations style={{'marginRight':"3%"}} >
+              {ourCreations[31].description}
+            </DescriptionOurCreations>
+          </OurCreationsBox3>
+        </OurCreationsBox>
+
+
+        {/* 32 */}
+
+        <OurCreationsBox>
+          <OurCreationsBox2>
+            <OurCreationsBox1
+              src={ourCreations[32].imgs[0]}
+              onClick={() => click(ourCreations[32].imgs[0], true)}
+
+              style={{width:"450px"}}
+            />
+
+            <OurCreationsBox4>
+              <CartGridOurCreations>
+                {ourCreations[32].imgs.map((j, p) => (
+                  <CartOurCreations
+                    key={p}
+                    src={j}
+                    onClick={() => click(j, true)}
+
+                  ></CartOurCreations>
+                ))}
+              </CartGridOurCreations>
+            </OurCreationsBox4>
+          </OurCreationsBox2>
+
+          <OurCreationsBox3>
+            <DescriptionOurCreations style={{'marginRight':"1%"}} >
+              {ourCreations[32].description}
+            </DescriptionOurCreations>
+          </OurCreationsBox3>
+        </OurCreationsBox>
+
+
+        {/* 33 */}
+
+        <OurCreationsBox>
+          <OurCreationsBox2>
+            <OurCreationsBox1
+              src={ourCreations[33].imgs[0]}
+              onClick={() => click(ourCreations[33].imgs[0], true)}
+
+              style={{width:"450px"}}
+            />
+
+            <OurCreationsBox4>
+              <CartGridOurCreations>
+                {ourCreations[33].imgs.map((j, p) => (
+                  <CartOurCreations
+                    key={p}
+                    src={j}
+                    onClick={() => click(j, true)}
+
+                  ></CartOurCreations>
+                ))}
+              </CartGridOurCreations>
+            </OurCreationsBox4>
+          </OurCreationsBox2>
+
+          <OurCreationsBox3>
+            <DescriptionOurCreations style={{'marginRight':"1%"}} >
+              {ourCreations[33].description}
+            </DescriptionOurCreations>
+          </OurCreationsBox3>
+        </OurCreationsBox>
+
+
+
+        {/* 34 */}
+
+
+        
+
+
+
+
+
+
+
+        
+
+
+
 
         
 

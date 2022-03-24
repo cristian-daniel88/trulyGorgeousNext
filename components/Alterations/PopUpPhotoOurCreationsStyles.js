@@ -32,6 +32,7 @@ padding: 30px;
 padding:${({resizePadding}) => resizePadding == 'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646949721/ourCreations/6/bridal-creations-34_hwed35.jpg' && "45px"} ;
 padding:${({resizePadding}) => resizePadding == 'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646949722/ourCreations/8/bride-creations-38_mdfcdp.jpg' && "60px"} ;
 padding:${({resizePadding}) => resizePadding == 'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646949713/ourCreations/24/bridal-creations-93_rxwhhi.jpg' && "40px"} ;
+padding:${({resizePadding}) => resizePadding == 'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646949720/ourCreations/33/wedding-bridal-creations-29_arqfg8.jpg' && "70px"} ;
 
 
 

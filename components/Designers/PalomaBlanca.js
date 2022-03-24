@@ -26,11 +26,74 @@ function PalomaBlanca() {
     dispatch(clickPopUpPhoto(value, booleano));
   };
 
+  
+
   const [first, setfirst] = useState(0);
   const [second, setsecond] = useState(0);
   const [third, setthird] = useState(0);
   const [fourth, setfourth] = useState(0);
   const [fift, setfift] = useState(0);
+
+  const changePhoto0 = () => {
+    if(first == 0) {
+      setfirst(1)
+    }  
+    
+    if(first == 1) {
+      setfirst(0)
+    }  
+
+    return
+  }
+
+  const changePhoto1 = () => {
+    
+    if(second == 0) {
+      setsecond(1)
+    }  
+    
+    if(second == 1) {
+      setsecond(0)
+    }  
+
+    return
+  }
+
+  const changePhoto2 = () => {
+    if(third == 0) {
+      setthird(1)
+    }  
+    
+    if(third == 1) {
+      setthird(0)
+    }  
+
+    return
+  }
+
+  const changePhoto3 = () => {
+    if(fourth == 0) {
+      setfourth(1)
+    }  
+    
+    if(fourth == 1) {
+      setfourth(0)
+    }  
+
+    return
+  }
+
+  const changePhoto4 = () => {
+    if(fift == 0) {
+      setfift(1)
+    }  
+    
+    if(fift == 1) {
+      setfift(0)
+    }  
+
+    return
+  }
 
   return (
     <DesignersContainer>
@@ -45,6 +108,8 @@ function PalomaBlanca() {
               onMouseEnter={() => setfirst(1)}
               onMouseLeave={() => setfirst(0)}
               style={{ width: "450px" }}
+
+              onClick={changePhoto0}
             />
 
             <OurCreationsBox4>
@@ -71,6 +136,7 @@ function PalomaBlanca() {
               onMouseEnter={() => setsecond(1)}
               onMouseLeave={() => setsecond(0)}
               style={{ width: "350px" }}
+              onClick={changePhoto1}
             />
 
             <OurCreationsBox4>
@@ -97,6 +163,7 @@ function PalomaBlanca() {
               onMouseEnter={() => setthird(1)}
               onMouseLeave={() => setthird(0)}
               style={{ width: "350px" }}
+              onClick={changePhoto2}
             />
 
             <OurCreationsBox4>
@@ -107,6 +174,7 @@ function PalomaBlanca() {
                     src={j}
                     onClick={() => click(j, true)}
                     palomaBlancaResize="true"
+                   
                   ></CartOurCreations>
                 ))}
               </CartGridOurCreations>
@@ -123,6 +191,7 @@ function PalomaBlanca() {
               onMouseEnter={() => setfourth(1)}
               onMouseLeave={() => setfourth(0)}
               style={{ width: "450px" }}
+              onClick={changePhoto3}
             />
 
             <OurCreationsBox4>
@@ -149,6 +218,7 @@ function PalomaBlanca() {
               onMouseEnter={() => setfift(1)}
               onMouseLeave={() => setfift(0)}
               style={{ width: "450px" }}
+              onClick={changePhoto4}
             />
 
             <OurCreationsBox4>

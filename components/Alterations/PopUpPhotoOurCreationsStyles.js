@@ -36,6 +36,9 @@ padding:${({resizePadding}) => resizePadding == 'https://res.cloudinary.com/trul
 
 padding:${({resizePadding}) => resizePadding == 'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646949720/ourCreations/5/bridal-creations-25_ryz6fs.jpg' && "65px"} ;
 
+padding:${({resizePadding}) => resizePadding == 'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646862871/designers/palomaBlanca/4894/4894f-2_xrxccu.jpg' && "65px"} ;
+
+
 
 @media screen and (max-width: 865px) {
   

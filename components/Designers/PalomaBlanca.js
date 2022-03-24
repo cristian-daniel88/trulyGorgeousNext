@@ -2,60 +2,66 @@ import React from "react";
 
 import { designers } from "../../database/designers";
 
-import SliderContainer from "../SliderContainer/SliderContainer";
-import SliderContainerPhone from "../SliderContainerPhone/SliderContainerPhone";
-
 import {
   DesignersContainer,
-  GridPhotoContainer,
-
-  ModelNameTitle,
   NameDesigner,
-  ProductContainer,
-  ProductContainerPhone,
+ 
 } from "./DesignersStyles";
 
-import MainPhoto from './MainPhoto'
+import {OurCreationsContainer, OurCreationsBox, OurCreationsBox1, OurCreationsBox2, OurCreationsBox4, OurCreationsBox3, DescriptionOurCreations, CartGridOurCreations, CartOurCreations} from "../Alterations/OurCreationsStyles"
+import { useDispatch } from "react-redux";
+import { clickPopUpPhoto } from "../../redux/popUpPhotoDesigner/popUpPhotoDesignerActions";
+
 
 function PalomaBlanca() {
   const ronaldModelsObject = designers[4].models;
+
+  const dispatch = useDispatch();
+
+  const click = (value, booleano) => {
+    dispatch(clickPopUpPhoto(value, booleano));
+  };
+
 
   return (
     <DesignersContainer>
       <NameDesigner>Paloma Blanca</NameDesigner>
 
-      {ronaldModelsObject.map((value, index) => (
-        <ProductContainer key={index}>
-          <MainPhoto front={value.imgs[0]} back={value.imgs[1]} key={index} src={value.imgs[0]}></MainPhoto>
-          <GridPhotoContainer>
-            <ModelNameTitle></ModelNameTitle>
+        
+      <OurCreationsContainer>
 
-             <SliderContainer photoMain={value.imgs} i={index} by={0} s/> 
+      <OurCreationsBox>
 
-          
-          </GridPhotoContainer>
-        </ProductContainer>
-      ))}
+          <OurCreationsBox2>
+            <OurCreationsBox1
+              src={ronaldModelsObject[0].imgs[0]}
+              onClick={() => click(ronaldModelsObject[0].imgs[0], true)}
 
-     {
-       ronaldModelsObject.map((v, i) => (
-          
-          
-            <>
-            <ProductContainerPhone>
-     
-              
-              <>
-               <SliderContainerPhone a={v}/>
-              </>
-         
-            </ProductContainerPhone>
-            </>
-          
+              style={{width:"450px"}}
+            />
 
-       ))
+            <OurCreationsBox4>
+              <CartGridOurCreations palomaBlancaResize='true'>
+                {ronaldModelsObject[0].imgs.map((j, p) => (
+                  <CartOurCreations
+                    key={p}
+                    src={j}
+                    onClick={() => click(j, true)}
+                    palomaBlancaResize='true'
 
-     }
+                  ></CartOurCreations>
+                ))}
+              </CartGridOurCreations>
+            </OurCreationsBox4>
+          </OurCreationsBox2>
+
+      
+        </OurCreationsBox> 
+
+      </OurCreationsContainer>
+  
+
+
     </DesignersContainer>
   );
 }

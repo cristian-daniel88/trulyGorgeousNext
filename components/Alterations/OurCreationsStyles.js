@@ -112,6 +112,7 @@ export const CartGridOurCreations = styled.div`
 
   @media screen and (max-width: 400px) {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns:${({palomaBlancaResize}) => palomaBlancaResize  && `repeat(auto-fit, minmax(85px, 1fr))`} ;
   }
 `;
 
@@ -129,5 +130,6 @@ export const CartOurCreations = styled.img`
 
   @media screen and (max-width: 400px) {
     width: 100px;
+   width : ${({palomaBlancaResize}) => palomaBlancaResize  && `85px`}
   }
 `;

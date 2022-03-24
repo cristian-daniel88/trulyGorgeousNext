@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 import { Provider} from "react-redux";
 import { PersistGate } from "redux-persist/lib/integration/react";
+import PopUpPhotoDesignerOurCreations from "../components/Alterations/PopUpPhotoDesignerOurCreations";
 import Aside from "../components/Aside/Aside";
 import AssetsBottom from "../components/AssetsBottom/AssetsBottom";
 
@@ -30,7 +31,7 @@ function ronaldJoyce() {
             <Nav></Nav>
             <Top />
             <Cover />
-            <PopUpPhotoDesigner />
+            <PopUpPhotoDesignerOurCreations />
 
             <ToggleMenu />
 

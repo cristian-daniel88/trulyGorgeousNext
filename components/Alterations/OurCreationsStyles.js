@@ -19,6 +19,7 @@ export const OurCreationsBox = styled.div`
   margin-top: 50px;
   margin-bottom: 50px;
   border-radius: 10px;
+  background-color:white ;
   @media screen and (max-width: 400px) {
     margin-top: 20px;
   }

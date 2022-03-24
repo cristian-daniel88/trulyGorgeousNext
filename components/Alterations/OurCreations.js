@@ -683,7 +683,7 @@ function OurCreations() {
           </OurCreationsBox2>
 
           <OurCreationsBox3>
-            <DescriptionOurCreations style={{'marginRight':"3%"}} >
+            <DescriptionOurCreations style={{'marginRight':"6%"}} >
               {ourCreations[19].description}
             </DescriptionOurCreations>
           </OurCreationsBox3>

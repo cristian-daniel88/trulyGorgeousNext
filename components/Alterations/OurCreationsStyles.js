@@ -13,12 +13,15 @@ export const OurCreationsContainer = styled.section`
 export const OurCreationsBox = styled.div`
   width: 100%;
 
-  border: solid 2px #e8d8d8;
+  border: solid 1px #e8d8d8;
+
+  border-top:solid 1px #e8d8d8 ;
+  border-bottom:solid 1px #e8d8d8 ;
 
   padding: 5% 0%;
   margin-top: 50px;
   margin-bottom: 50px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color:white ;
   @media screen and (max-width: 400px) {
     margin-top: 20px;
@@ -29,7 +32,7 @@ export const OurCreationsBox1 = styled.img`
   width: 400px;
   min-width: 200px;
   border: solid 1px #e8d8d8;
-  border-radius: 5px;
+  //border-radius: 5px;
   cursor: pointer;
 `;
 
@@ -68,6 +71,10 @@ export const DescriptionOurCreations = styled.p`
   font-size: 17px;
   color: rgba(73, 66, 97, 0.71);
   padding: 10px;
+  background-color:#f0f4f8 ;
+  border: solid 1px #e8d8d8;
+  border-radius:5px ;
+
 
 
 
@@ -101,7 +108,7 @@ export const CartGridOurCreations = styled.div`
 export const CartOurCreations = styled.img`
   width: 200px;
 
-  border-radius: 7px;
+  //border-radius: 7px;
 
   cursor: pointer;
   margin: auto;

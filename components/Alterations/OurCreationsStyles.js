@@ -52,6 +52,8 @@ export const OurCreationsBox3 = styled.div`
 
   @media screen and (max-width: 400px) {
     margin-top:0 ;
+    justify-content: center;
+    padding-left:8px ;
   }
 `;
 
@@ -74,19 +76,27 @@ export const DescriptionOurCreations = styled.p`
   background-color:#f0f4f8 ;
   border: solid 1px #e8d8d8;
   border-radius:5px ;
+  //text-align:center;
+ 
 
 
 
 
 
+  @media screen and (max-width: 400px) {
+   margin-right:50px;
+   display:block ;
 
+    
+  }
 
   
     
 
   @media screen and (max-width: 1300px) {
     width: 100%;
-    margin-right: 0;
+    
+    margin: auto;
   }
 `;
 

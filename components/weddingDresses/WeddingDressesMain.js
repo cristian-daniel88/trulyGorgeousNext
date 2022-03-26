@@ -6,23 +6,37 @@ import {
   DesignersMainCard,
   DesignersMainColum,
   DesignersMainContainer,
+  NameDesigner,
   TitleBrand,
 } from "../Designers/DesignersStyles";
 
 function WeddingDressesMain() {
   return (
-    <DesignersContainer>
+    <DesignersContainer
+      style={{
+        backgroundImage: `url('./assets/backgroundA.jpg')`,
+        fontSize: "center",
+        //'backgroundRepeat':'no-repeat',
+        //'backgroundSize':'cover'
+      }}
+    >
+      <NameDesigner
+        style={{
+          color: "#927373",
+        }}
+      > 
+      Wedding Dresses
+      
+      </NameDesigner>
       <style>
         @import
         url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
       </style>
-      <DesignersMainContainer style={{'marginTop':'50px'}}>
-
+      <DesignersMainContainer style={{ marginTop: "50px" }}>
         <DesignersCardContainer>
-
           <LinkA href={"/fairytale"}>
             <DesignersMainCard>
-            <TitleBrand>
+              <TitleBrand>
                 <p className="brandTitle">Fairytale</p>
               </TitleBrand>
             </DesignersMainCard>
@@ -35,13 +49,12 @@ function WeddingDressesMain() {
               </TitleBrand>
             </DesignersMainCard>
           </LinkA>
-
         </DesignersCardContainer>
 
         <DesignersCardContainer>
           <LinkA href={"/sophisticated"}>
             <DesignersMainCard>
-            <TitleBrand>
+              <TitleBrand>
                 <p className="brandTitle">Sophisticated</p>
               </TitleBrand>
             </DesignersMainCard>
@@ -55,12 +68,9 @@ function WeddingDressesMain() {
             </DesignersMainCard>
           </LinkA>
         </DesignersCardContainer>
-
-        
       </DesignersMainContainer>
     </DesignersContainer>
   );
 }
 
- 
 export default WeddingDressesMain;

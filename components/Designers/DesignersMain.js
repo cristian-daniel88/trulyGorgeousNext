@@ -6,21 +6,28 @@ import {
   DesignersMainCard,
   DesignersMainColum,
   DesignersMainContainer,
+  NameDesigner,
   TitleBrand,
 } from "./DesignersStyles";
 
 function DesignersMain() {
   return (
     <DesignersContainer  style={{
-      "background-image": "url('')" , 
-      "backgroundRepeat":"no-repeat",
-      "backgroundPosition":"center",
-      "backgroundSize":"cover"
+      "background-image": "url('./assets/backgroundA.jpg')" , 
+      //"backgroundRepeat":"no-repeat",
+      //"backgroundPosition":"center",
+      //"backgroundSize":"cover"
       }}>
       <style>
         @import
         url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
       </style>
+      <NameDesigner
+      style={{
+        'color':'#927373'
+      }}
+      
+      >Designers</NameDesigner>
       <DesignersMainContainer style={{'marginTop':'50px'}}>
         <DesignersCardContainer>
           <LinkA href={"/ronald-joyce"}>

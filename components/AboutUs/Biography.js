@@ -28,7 +28,7 @@ function Biography() {
       <NameDesigner style={{ marginBottom: "20px" }}>About Us</NameDesigner>
 
       <BiographyContainer>
-        <BoutiqueImg src="./assets/boutique2.jpg" style={{"width":"30%", 'marginRight':'25px'}} onClick={()=>click('./assets/boutique2.jpg', true)} />
+        <BoutiqueImg src="./assets/alterations.jpg" style={{"width":"30%", 'marginRight':'25px', 'cursor':'pointer'}} onClick={()=>click('./assets/alterations.jpg', true)} />
         <ParrafoPerfil style={{'marginBottom':"50px"}}>
           <BoldTitle>Our Boutique</BoldTitle>
           <p style={{'fontSize':'15px', 'textAlign':'justify', 'color':"#494261b5"}}>
@@ -48,7 +48,7 @@ function Biography() {
           </p>
         </ParrafoPerfil>
 
-        <PhotoPerfil src="./assets/perfil.jpg" style={{ 'float': "right" , "width":"20%" , 'marginLeft':'25px'}}  onClick={()=>click('./assets/perfil.jpg', true)} />
+        <PhotoPerfil src="./assets/perfil.jpg" style={{ 'float': "right" , "width":"20%" , 'marginLeft':'25px', 'cursor':'pointer'}}  onClick={()=>click('./assets/perfil.jpg', true)} />
         <ParrafoPerfil>
           <BoldTitle>Meet Sunay</BoldTitle>
           <p style={{'fontSize':'15px', 'textAlign':'justify' , 'color':"#494261b5"}}>

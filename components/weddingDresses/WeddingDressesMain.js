@@ -4,7 +4,7 @@ import {
   DesignersCardContainer,
   DesignersContainer,
   DesignersMainCard,
-  DesignersMainColum,
+
   DesignersMainContainer,
   NameDesigner,
   TitleBrand,

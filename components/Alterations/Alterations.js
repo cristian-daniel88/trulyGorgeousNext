@@ -1,65 +1,58 @@
 import React from "react";
-import { NameDesigner } from "../Designers/DesignersStyles";
 import { LinkA } from "../Nav/NavStyles";
-import { AlterationsContainer, BoxAlterations } from "./AlterationsStyles";
+import {
+  DesignersCardContainer,
+  DesignersContainer,
+  DesignersMainCard,
+
+  DesignersMainContainer,
+  NameDesigner,
+  TitleBrand,
+} from "../Designers/DesignersStyles";
 
 function Alterations() {
   return (
-    <div style={{
-
-      'backgroundImage':`url('./assets/alterations2.jpg')`,
-
-      'backgroundPosition':'center',
-
-      'backgroundRepeat':'no-repeat',
-
-      'backgroundSize':'cover',
-      
-      'position':'relative'
-
-      
-    }}>
-
-    <div 
-    style={{
-      'height':'12vh',
-      'display':'flex',
-      'justifyContent':'center',
-      'alignItems':'center',
-      'background':'white'
-    }}
+    <DesignersContainer
+      style={{
+        backgroundImage: `url('./assets/backgroundA.jpg')`,
+        fontSize: "center",
+        //'backgroundRepeat':'no-repeat',
+        //'backgroundSize':'cover'
+      }}
     >
-       <NameDesigner style={{
-         
-         
-       }}>Alterations</NameDesigner>
-
-
-
-
-
-
-       
-    </div>
-
-
-
-    <AlterationsContainer>
+      <NameDesigner
+        style={{
+          color: "rgb(115 112 137)",
+        }}
+      > 
+      Alterations
+      
+      </NameDesigner>
       <style>
         @import
         url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
       </style>
+      <DesignersMainContainer style={{ marginTop: "50px" }}>
+        <DesignersCardContainer>
+          <LinkA href={"/our-creations"}>
+            <DesignersMainCard>
+              <TitleBrand>
+                <p className="brandTitle">Our Creations</p>
+              </TitleBrand>
+            </DesignersMainCard>
+          </LinkA>
 
-      
-      <LinkA href={'/our-creations'}>
-      <BoxAlterations>Our Creations</BoxAlterations>
-      </LinkA>
+          <LinkA href={"/price-list"}>
+            <DesignersMainCard>
+              <TitleBrand>
+                <p className="brandTitle">Price List</p>
+              </TitleBrand>
+            </DesignersMainCard>
+          </LinkA>
+        </DesignersCardContainer>
 
-      <LinkA href={'/price-list'}>
-      <BoxAlterations>Price List</BoxAlterations>
-      </LinkA>
-    </AlterationsContainer>
-    </div>
+      </DesignersMainContainer>
+    </DesignersContainer>
   );
 }
 

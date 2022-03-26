@@ -129,7 +129,7 @@ export const ourCreations = [
 
       'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646949722/ourCreations/7/bridal-creations-36_choswb.jpg',
 
-      'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646949721/ourCreations/7/bridal-creations-34_wtciwc.jpg',
+      //'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646949721/ourCreations/7/bridal-creations-34_wtciwc.jpg',
 
     ],
   },

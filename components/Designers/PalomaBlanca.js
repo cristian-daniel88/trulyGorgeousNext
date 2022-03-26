@@ -129,6 +129,8 @@ function PalomaBlanca() {
 
         {/* 1 */}
 
+        <NameDesigner>Paloma Blanca</NameDesigner>
+
         <OurCreationsBox>
           <OurCreationsBox2>
             <OurCreationsBox1
@@ -155,6 +157,8 @@ function PalomaBlanca() {
         </OurCreationsBox>
 
         {/* 2 */}
+
+        <NameDesigner>Paloma Blanca</NameDesigner>
 
         <OurCreationsBox>
           <OurCreationsBox2>
@@ -184,6 +188,8 @@ function PalomaBlanca() {
 
         {/* 3 */}
 
+        <NameDesigner>Paloma Blanca</NameDesigner>
+
         <OurCreationsBox>
           <OurCreationsBox2>
             <OurCreationsBox1
@@ -210,6 +216,8 @@ function PalomaBlanca() {
         </OurCreationsBox>
 
         {/* 4 */}
+
+        <NameDesigner>Paloma Blanca</NameDesigner>
 
         <OurCreationsBox>
           <OurCreationsBox2>

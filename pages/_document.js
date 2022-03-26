@@ -11,7 +11,7 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#000000" />
 
           {/* SEO */}
-          <link rel="icon" href="https://res.cloudinary.com/truly-gorgeous/image/upload/v1647859774/meta/icono_ybtzmo.ico" />
+          <link rel="icon" href="https://res.cloudinary.com/truly-gorgeous/image/upload/v1648322711/public/assets/wedding-dress-_2__h2ryrl.ico" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="theme-color" content="#000000" />
           <meta

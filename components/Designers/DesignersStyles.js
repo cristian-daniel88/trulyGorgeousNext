@@ -39,6 +39,46 @@ export const NameDesigner = styled.h3`
   }
 `;
 
+export const NameDesignerSub = styled.h3`
+  text-align: center;
+  font-size: 2em;
+  @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&display=swap");
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  color: black;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  /* font-family: "Carattere", cursive;
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Fredoka", sans-serif; */
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  font-family: "FuturaStd", sans-serif;
+  font-weight: 300;
+  letter-spacing: 5px;
+  color: #a59797;
+  font-size: 120%;
+
+  @media screen and (max-width: 865px) {
+    display:none ;
+
+  
+  }
+
+
+
+
+  @media screen and (max-width: 865px) {
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+`;
+
+
+
+
+
 export const BrandDesigner = styled.div`
   background-image: ${({ img }) => `url(${img})`};
   height: ${({ h }) => `${h}`};

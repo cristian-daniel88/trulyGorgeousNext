@@ -97,7 +97,7 @@ function PalomaBlanca() {
 
   return (
     <DesignersContainer>
-      <NameDesigner>Paloma Blanca</NameDesigner>
+      <NameDesigner style={{ margin: "30px" }}>Paloma Blanca</NameDesigner>
 
       <OurCreationsContainer>
         {/* 0 */}

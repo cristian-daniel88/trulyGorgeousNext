@@ -25,7 +25,7 @@ function LusanMandongus() {
 
   return (
     <DesignersContainer>
-      <NameDesigner>Lusan Mandongus</NameDesigner>
+      <NameDesigner style={{ margin: "30px" }}>Lusan Mandongus</NameDesigner>
 
       <CartGrid>
         {ronaldModelsObject.map((v, i) => (
@@ -49,6 +49,16 @@ function LusanMandongus() {
                   />
                 </ImagenContainerDesigner>
               </PhoneCard>
+
+                     
+            {v.uid == "5" ? (
+            ""
+          ) : (
+            <NameDesigner style={{ margin: "30px" }}>
+              Lusan Mandongus
+            </NameDesigner>
+          )}
+         
             </>
           </ProductContainerPhone>
         </>

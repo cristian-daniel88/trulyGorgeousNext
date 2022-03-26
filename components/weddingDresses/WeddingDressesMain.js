@@ -22,7 +22,7 @@ function WeddingDressesMain() {
     >
       <NameDesigner
         style={{
-          color: "#927373",
+          color: "rgb(115 112 137)",
         }}
       > 
       Wedding Dresses

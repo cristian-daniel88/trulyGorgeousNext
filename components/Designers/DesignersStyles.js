@@ -97,7 +97,7 @@ export const ProductContainer = styled.div`
   width: 95%;
   height: auto;
   margin: auto;
-  margin-bottom: 20px;
+  //margin-bottom: 20px;
   background-color: white;
   border: solid 1px #e8d8d8;
   border-radius: 10px;

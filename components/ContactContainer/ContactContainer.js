@@ -184,6 +184,8 @@ function ContactContainer() {
                   onChange={(e) => setWeddingDate(e.target.value)}
                   value={weddingDate}
                   type="date"
+
+                  
                 />
 
                 <Label>Requested Appointment Date</Label>

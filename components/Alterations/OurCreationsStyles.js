@@ -18,7 +18,7 @@ export const OurCreationsBox = styled.div`
   border-top:solid 1px #e8d8d8 ;
   border-bottom:solid 1px #e8d8d8 ;
 
-  padding: 5% 0%;
+  padding: 5% 3%;
   margin-top: 50px;
   margin-bottom: 50px;
   border-radius: 5px;
@@ -47,13 +47,16 @@ export const OurCreationsBox2 = styled.div`
 export const OurCreationsBox3 = styled.div`
   width: 100%;
   display: flex;
-  justify-content: right;
+  //justify-content: right;
   margin-top: 20px;
+ 
+  justify-content:center ;
+
 
   @media screen and (max-width: 400px) {
     margin-top:0 ;
     justify-content: center;
-    padding-left:8px ;
+    //padding-left:8px ;
   }
 `;
 
@@ -67,7 +70,7 @@ export const OurCreationsBox4 = styled.div`
   }
 `;
 
-export const DescriptionOurCreations = styled.p`
+export const DescriptionOurCreations = styled.div`
   width: 60%;
   margin-right: 3.5%;
   font-size: 17px;
@@ -76,7 +79,8 @@ export const DescriptionOurCreations = styled.p`
   background-color:#f0f4f8 ;
   border: solid 1px #e8d8d8;
   border-radius:5px ;
-  //text-align:center;
+  text-align:center;
+  //display: block;
  
 
 
@@ -84,8 +88,9 @@ export const DescriptionOurCreations = styled.p`
 
 
   @media screen and (max-width: 400px) {
-   margin-right:50px;
+   //margin-right:50px;
    display:block ;
+   width:100% ;
 
     
   }

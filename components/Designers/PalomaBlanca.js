@@ -101,7 +101,7 @@ function PalomaBlanca() {
 
       <OurCreationsContainer>
         {/* 0 */}
-        <OurCreationsBox>
+        <OurCreationsBox palomaSize='true'>
           <OurCreationsBox2>
             <OurCreationsBox1
               src={ronaldModelsObject[0].imgs[first]}
@@ -131,7 +131,7 @@ function PalomaBlanca() {
 
         <NameDesigner>Paloma Blanca</NameDesigner>
 
-        <OurCreationsBox>
+        <OurCreationsBox palomaSize='true'>
           <OurCreationsBox2>
             <OurCreationsBox1
               src={ronaldModelsObject[1].imgs[second]}
@@ -160,7 +160,7 @@ function PalomaBlanca() {
 
         <NameDesigner>Paloma Blanca</NameDesigner>
 
-        <OurCreationsBox>
+        <OurCreationsBox palomaSize='true'>
           <OurCreationsBox2>
             <OurCreationsBox1
               src={ronaldModelsObject[2].imgs[third]}
@@ -190,7 +190,7 @@ function PalomaBlanca() {
 
         <NameDesigner>Paloma Blanca</NameDesigner>
 
-        <OurCreationsBox>
+        <OurCreationsBox palomaSize='true'>
           <OurCreationsBox2>
             <OurCreationsBox1
               src={ronaldModelsObject[3].imgs[fourth]}
@@ -219,7 +219,7 @@ function PalomaBlanca() {
 
         <NameDesigner>Paloma Blanca</NameDesigner>
 
-        <OurCreationsBox>
+        <OurCreationsBox palomaSize='true'>
           <OurCreationsBox2>
             <OurCreationsBox1
               src={ronaldModelsObject[4].imgs[fift]}

@@ -61,8 +61,12 @@ export const ContactDetails = styled.div`
   //background-color: green;
   padding: 10px;
   margin:auto ;
-  margin-bottom:20px ;
-  margin-top:30px ;
+  margin-bottom:15px ;
+  margin-top:20px ;
+
+  @media screen and (max-width: 865px) {
+    margin-top:60px ;
+  }
 `;
 
 export const ContactDetailsContainer = styled.div`
@@ -259,7 +263,7 @@ export const Aside = styled.div`
 `;
 
 export const BookingApoiment = styled.p`
-  width: 95%;
+ 
   background-color: white;
   text-align: center;
   margin: auto;
@@ -268,4 +272,5 @@ export const BookingApoiment = styled.p`
   font-size: 14px;
   color: #747474;
   border: solid 1px #e8d8d8;
+  display:inline ;
 `;

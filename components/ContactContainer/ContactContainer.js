@@ -126,7 +126,16 @@ function ContactContainer() {
         </DoneContainer>
       ) : (
          <>
+         <div
+         style={{
+           'width':'100%',
+           'display':'flex',
+           'justifyContent':'center'
+         }}
+         >
+
         <BookingApoiment>Boocking</BookingApoiment>
+         </div>
         <ContainerBoxesContact>
           <ContactBoxes1>
             {/* <ContactDetails>

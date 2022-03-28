@@ -28,8 +28,8 @@ function Biography() {
       <NameDesigner style={{ marginBottom: "20px" }}>About Us</NameDesigner>
 
       <BiographyContainer>
-        <BoutiqueImg src="./assets/alterations.jpg" style={{"width":"30%", 'marginRight':'25px', 'cursor':'pointer'}} onClick={()=>click('./assets/alterations.jpg', true)} />
-        <ParrafoPerfil style={{'marginBottom':"50px"}}>
+        <BoutiqueImg src="./assets/alterations.jpg" style={{"width":"30%", 'marginRight':'25px', 'cursor':'pointer', }} onClick={()=>click('./assets/alterations.jpg', true)} />
+        <ParrafoPerfil style={{'marginBottom':"150px"}}>
           <BoldTitle>Our Boutique</BoldTitle>
           <p style={{'fontSize':'15px', 'textAlign':'justify', 'color':"#494261b5"}}>
             At Truly Gorgeous, we provide a relaxed, customer-focused setting
@@ -47,7 +47,7 @@ function Biography() {
             dress.
           </p>
         </ParrafoPerfil>
-
+       
         <PhotoPerfil src="./assets/perfil.jpg" style={{ 'float': "right" , "width":"20%" , 'marginLeft':'25px', 'cursor':'pointer'}}  onClick={()=>click('./assets/perfil.jpg', true)} />
         <ParrafoPerfil>
           <BoldTitle>Meet Sunay</BoldTitle>

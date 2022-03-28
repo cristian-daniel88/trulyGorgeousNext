@@ -40,6 +40,12 @@ display: block;
 export const ParrafoPerfil = styled.div`
 margin-bottom: 10px;
 
+@media screen and (max-width: 865px) {
+   margin-bottom:50px ;
+  
+   
+  }
+
 `
 
 export const BoldTitle = styled.strong`

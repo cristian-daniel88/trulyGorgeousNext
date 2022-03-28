@@ -4,6 +4,7 @@ import Arrows from '../Arrows/Arrows'
 import Balls from '../Balls/Balls'
 import { useDispatch, useSelector } from 'react-redux'
 import { hoverSlider, sliderManual } from '../../redux/slider/sliderActions'
+import { countPlus, countPut } from '../../redux/count/countActions'
 
 
 
@@ -13,7 +14,11 @@ import { hoverSlider, sliderManual } from '../../redux/slider/sliderActions'
 
 
 function HomeBody({toggle}) {
+  const count2 = useSelector(state => state.count.count)
+  console.log(count2)
   const [count, setCount] = useState(1);
+
+
   
   const [opaci , setOpaci] = useState(1);
   
@@ -41,11 +46,13 @@ function HomeBody({toggle}) {
     if (!stopAutoSlider) {
       let timer = setTimeout(()=> {
         setOpaci(1)
-        if(count == 3){
-          setCount(1)
+        if(count2 == 3){
+          setCount(1);
+          dispatch(countPut(1))
           return
        }
-       setCount(count + 1)
+       setCount(count2 + 1);
+       dispatch(countPlus())
       } , 4000);
 
       let timerOpacity1 = setTimeout(()=> {
@@ -73,6 +80,9 @@ function HomeBody({toggle}) {
       } , 3500);
 
 
+      
+
+
 
 
 
@@ -94,7 +104,7 @@ function HomeBody({toggle}) {
 
     
     
-  }, [count])
+  }, [count2])
 
 
   
@@ -107,7 +117,7 @@ function HomeBody({toggle}) {
    
     <div onMouseEnter={() => activateSlider(true)} onMouseLeave={ () => activateSlider(false) } style={{'overflowX':'hidden'}} onClick={stopSlider}>
 
-    {count === 1 && (<BodyHome image={`./assets/banner${count}.jpg`} op={opaci} indx={count} toggle={toggle}>
+    {count2 === 1 && (<BodyHome image={`./assets/banner${count2}.jpg`} op={opaci} indx={count2} toggle={toggle}>
 
 
     {/* <Letters titulo={'Truly Gorgeous'} letters={'Bridalwear'} button={'01243 788090'} cuenta={count} />   */}
@@ -117,7 +127,7 @@ function HomeBody({toggle}) {
     
     </BodyHome>)}
 
-    {count === 2 && (<BodyHome image={`./assets/banner${count}.jpg`} op={opaci} indx={count}>
+    {count2 === 2 && (<BodyHome image={`./assets/banner${count2}.jpg`} op={opaci} indx={count2}>
 
     <div
     style={{
@@ -142,7 +152,7 @@ function HomeBody({toggle}) {
   
     </BodyHome>)}
 
-    {count === 3 && (<BodyHome image={`./assets/banner${count}.jpg`} op={opaci}  indx={count}>
+    {count2 === 3 && (<BodyHome image={`./assets/banner${count2}.jpg`} op={opaci}  indx={count2}>
     {/* <Letters  titulo={'titulo 3'}  letters={'letters3'} button={'button 3'} cuenta={count}/>  */}
 
 
@@ -150,8 +160,8 @@ function HomeBody({toggle}) {
   
     </BodyHome>)}
 
-    <Arrows countFunction={setCount} cuenta={count}/>
-    <Balls bola={count}/>
+    <Arrows countFunction={setCount} cuenta={count2}/>
+    <Balls bola={count2}/>
 
 
    

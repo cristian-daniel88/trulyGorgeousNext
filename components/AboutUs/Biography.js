@@ -29,7 +29,7 @@ function Biography() {
 
       <BiographyContainer>
         <BoutiqueImg src="./assets/alterations.jpg" style={{"width":"30%", 'marginRight':'25px', 'cursor':'pointer', }} onClick={()=>click('./assets/alterations.jpg', true)} />
-        <ParrafoPerfil style={{'marginBottom':"150px"}}>
+        <ParrafoPerfil parrafo1='true'  >
           <BoldTitle>Our Boutique</BoldTitle>
           <p style={{'fontSize':'15px', 'textAlign':'justify', 'color':"#494261b5"}}>
             At Truly Gorgeous, we provide a relaxed, customer-focused setting

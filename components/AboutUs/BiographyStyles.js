@@ -39,9 +39,10 @@ display: block;
 
 export const ParrafoPerfil = styled.div`
 margin-bottom: 10px;
+margin-bottom:${({parrafo1}) => parrafo1 && '150px'} ;
 
 @media screen and (max-width: 865px) {
-   margin-bottom:50px ;
+  margin-bottom:${({parrafo1}) => parrafo1 && '30px'} ;
   
    
   }

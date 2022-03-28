@@ -269,8 +269,11 @@ export const BookingApoiment = styled.p`
   margin: auto;
   border-radius: 5px;
   font-family: "PT Sans", sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   color: #747474;
   border: solid 1px #e8d8d8;
   display:inline ;
+  width: 98%;
+  margin-bottom:10px ;
+  padding:10px ;
 `;

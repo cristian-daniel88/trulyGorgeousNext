@@ -134,7 +134,10 @@ function ContactContainer() {
          }}
          >
 
-        <BookingApoiment>Boocking</BookingApoiment>
+        <BookingApoiment> <BoldContact style={{'fontSize':'22px'}}>Book an Appointment at Truly Gorgeous</BoldContact> <br/> To arrange your appointment with us.
+          In our Boutique we offer only one bride a time.
+          Please use the booking form below or call our boutique
+          </BookingApoiment>
          </div>
         <ContainerBoxesContact>
           <ContactBoxes1>

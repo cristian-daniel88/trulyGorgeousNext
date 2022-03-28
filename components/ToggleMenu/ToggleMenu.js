@@ -33,7 +33,7 @@ function ToggleMenu() {
               </LiBurguer>
             </LinkA>
 
-            <DetailsLanguage open>
+            {/* <DetailsLanguage open>
               <LinkA href={"/about-us"}>
                 <SummaryLanguage
                   onClick={toggleMenu}
@@ -61,17 +61,15 @@ function ToggleMenu() {
                 </ButtonMenu>
               </LinkA>
               <br />
-              {/* 
-              <LinkA href={'/testimonials'}>
-              <ButtonMenu
-                style={{'fontSize':"12px"}}
+              
+            
+            </DetailsLanguage> */}
 
-                onClick={toggleMenu}
-                >
-                TESTIMONIAL
-              </ButtonMenu>
-              </LinkA> */}
-            </DetailsLanguage>
+            <LinkA href={"/our-boutique"} onClick={toggleMenu}>
+              <LiBurguer>
+                <ButtonMenu onClick={toggleMenu}>ABOUT US</ButtonMenu>
+              </LiBurguer>
+            </LinkA>
 
             {/* <DetailsLanguage>
               <SummaryLanguage>WEDDING DRESSES</SummaryLanguage>
@@ -136,10 +134,13 @@ function ToggleMenu() {
                 </SummaryLanguage>
               </LinkA>
 
-              <LinkA href={'/price-list'}>
-              <ButtonMenu style={{ fontSize: "12px", marginBottom: "5px" }} onClick={toggleMenu}>
-                PRICE LIST
-              </ButtonMenu>
+              <LinkA href={"/price-list"}>
+                <ButtonMenu
+                  style={{ fontSize: "12px", marginBottom: "5px" }}
+                  onClick={toggleMenu}
+                >
+                  PRICE LIST
+                </ButtonMenu>
               </LinkA>
 
               <br />

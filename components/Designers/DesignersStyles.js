@@ -44,6 +44,7 @@ export const NameDesigner = styled.h3`
   @media screen and (max-width: 865px) {
     margin-top: 20px;
     font-size: 1.5em;
+    margin-top: ${({alterationsMargin}) => alterationsMargin && '0px'} ;
   }
 `;
 

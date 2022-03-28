@@ -15,7 +15,7 @@ function Alterations() {
     <DesignersContainer
       style={{
         backgroundImage: `url('./assets/alterations2.jpg')`,
-        //fontSize: "center",
+         backgroundPosition: "center",
         'backgroundRepeat':'no-repeat',
         'backgroundSize':'cover',
          height: '100vh',

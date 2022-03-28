@@ -109,9 +109,11 @@ function Nav() {
 
         <ContainerLogoAndH2>
 
+        <LinkA href={'/'}>
         <LogoContainer>
         <Logo/>
         </LogoContainer>
+        </LinkA>
 
         <H1Container>
             <Designer>

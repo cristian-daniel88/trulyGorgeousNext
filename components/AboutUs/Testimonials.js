@@ -54,6 +54,34 @@ function Testimonials() {
       </TestimonialsContainer>
 
 
+      <DesignersContainer>
+         
+      <div
+      style={{
+        'display':'flex',
+        'justifyContent':'center',
+      }}
+      >
+
+      <TestimonialsImg src="./assets/1.jpg" alt="our brides"/>
+
+      
+      </div>
+
+      <div
+      style={{
+        'display':'flex',
+        'justifyContent':'center', 
+      }}
+      >
+
+      <TestimonialsImg src='./assets/2.jpg' alt="our brides"/>
+      </div>
+
+      
+    </DesignersContainer>
+
+
 
       
      

@@ -11,9 +11,18 @@ function MainPhoto({front , back}) {
   const changePhotoFront = () => {
     setBackFront(false)
   }
+
+  const changePhoto = () => {
+    if (backFront) {
+      setBackFront(false)
+      return
+    }
+    setBackFront(true)
+    return
+  }
   return (
   
-          <MainPhotoContainer src={backFront ? back : front} onMouseEnter={changePhotoBack} onMouseLeave={changePhotoFront}>
+          <MainPhotoContainer src={backFront ? back : front} onMouseEnter={changePhotoBack} onMouseLeave={changePhotoFront} onClick={changePhoto}>
              
            </MainPhotoContainer>
    

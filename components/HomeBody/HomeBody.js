@@ -21,12 +21,18 @@ function HomeBody({toggle}) {
   const stopAutoSlider = useSelector((state)=> state.slider.slider)
   
   const stopSlider = () => {
-    dispatch(sliderManual())
+    dispatch(sliderManual(false))
+    dispatch(hoverSlider(true));
+
+    return
   }
 
-  const activateSlider = () => {
-    dispatch(hoverSlider())
-  }
+  const activateSlider = (value) => {
+    dispatch(hoverSlider(value))
+  } 
+
+
+
   
 
   useEffect(() => {
@@ -99,7 +105,7 @@ function HomeBody({toggle}) {
 
   return (
    
-    <div onMouseEnter={activateSlider} onMouseLeave={activateSlider} style={{'overflowX':'hidden'}} onClick={stopSlider}>
+    <div onMouseEnter={() => activateSlider(true)} onMouseLeave={ () => activateSlider(false) } style={{'overflowX':'hidden'}} onClick={stopSlider}>
 
     {count === 1 && (<BodyHome image={`./assets/banner${count}.jpg`} op={opaci} indx={count} toggle={toggle}>
 

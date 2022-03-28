@@ -15,7 +15,7 @@ import { countPlus, countPut } from '../../redux/count/countActions'
 
 function HomeBody({toggle}) {
   const count2 = useSelector(state => state.count.count)
-  console.log(count2)
+  //console.log(count2)
   const [count, setCount] = useState(1);
 
 

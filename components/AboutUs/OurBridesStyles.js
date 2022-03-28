@@ -37,4 +37,10 @@ width:95% ;
 rotate: 90%;
 margin-bottom: 20px;
 
+@media screen and (max-width: 865px) {
+    display:${({testimonials}) => testimonials && 'none'} ;
+  
+   
+  }
+
 `

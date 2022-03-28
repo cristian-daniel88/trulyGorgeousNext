@@ -63,7 +63,7 @@ function Testimonials() {
       }}
       >
 
-      <TestimonialsImg src="./assets/1.jpg" alt="our brides"/>
+      <TestimonialsImg src="./assets/1.jpg" alt="our brides" testimonials='true'/>
 
       
       </div>

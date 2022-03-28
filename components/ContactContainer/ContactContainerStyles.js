@@ -62,10 +62,10 @@ export const ContactDetails = styled.div`
   padding: 10px;
   margin:auto ;
   margin-bottom:15px ;
-  margin-top:20px ;
+  margin-top:0px ;
 
   @media screen and (max-width: 865px) {
-    margin-top:60px ;
+    margin-top:20px ;
   }
 `;
 
@@ -229,11 +229,12 @@ export const Send = styled.button`
 
 export const ContactBoxes2 = styled.div`
   width: 55%;
-  height: 500px;
+  
 
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-direction:column ;
+
 
   @media screen and (max-width: 865px) {
     width: 100%;

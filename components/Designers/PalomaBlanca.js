@@ -97,10 +97,10 @@ function PalomaBlanca() {
 
   return (
     <DesignersContainer>
-      <NameDesigner style={{ margin: "30px" }}>Paloma Blanca</NameDesigner>
 
       <OurCreationsContainer>
         {/* 0 */}
+      <NameDesigner style={{ marginTop: "30px" }}>Paloma Blanca</NameDesigner>
         <OurCreationsBox palomaSize='true'>
           <OurCreationsBox2>
             <OurCreationsBox1
@@ -129,7 +129,7 @@ function PalomaBlanca() {
 
         {/* 1 */}
 
-        <NameDesigner>Paloma Blanca</NameDesigner>
+        <NameDesigner style={{'marginBottom':'20px'}}>Paloma Blanca</NameDesigner>
 
         <OurCreationsBox palomaSize='true'>
           <OurCreationsBox2>

@@ -31,6 +31,14 @@ export const NameDesigner = styled.h3`
   color: #a59797;
   font-size: 120%;
 
+  margin-top: ${({alterationsMargin}) => alterationsMargin && '0px'} ;
+  color: ${({alterationsMargin}) => alterationsMargin && '#d5d9df'} ; 
+  background-color: ${({alterationsMargin}) => alterationsMargin && 'white'} ; 
+  height:${({alterationsMargin}) => alterationsMargin && '80px'} ;
+  display:${({alterationsMargin}) => alterationsMargin && 'flex'} ;
+  justify-content:${({alterationsMargin}) => alterationsMargin && 'center'} ;
+  align-items:${({alterationsMargin}) => alterationsMargin && 'center'} ;
+
 
 
   @media screen and (max-width: 865px) {
@@ -164,6 +172,16 @@ export const DesignersMainContainer = styled.div`
   //background-color: #f0f4f8;
 
   margin: auto;
+
+  margin-top: ${({alterationsMargin}) => alterationsMargin && '200px'} ;
+
+
+  @media screen and (max-width: 865px) {
+    margin-top: ${({alterationsMargin}) => alterationsMargin && '150px'} ;
+   
+  }
+
+
 `;
 export const DesignersCardContainer = styled.div`
   display: flex;

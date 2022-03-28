@@ -14,11 +14,11 @@ function Alterations() {
   return (
     <DesignersContainer
       style={{
-        backgroundImage: `url('./assets/backgroundA.jpg')`,
-        fontSize: "center",
-        //'backgroundRepeat':'no-repeat',
-        //'backgroundSize':'cover'
-        height: '70vh',
+        backgroundImage: `url('./assets/alterations2.jpg')`,
+        //fontSize: "center",
+        'backgroundRepeat':'no-repeat',
+        'backgroundSize':'cover',
+         height: '100vh',
        
       }}
     >
@@ -26,6 +26,8 @@ function Alterations() {
         style={{
           color: "rgb(115 112 137)",
         }}
+
+        alterationsMargin='true'
       > 
       Alterations
       
@@ -34,8 +36,8 @@ function Alterations() {
         @import
         url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
       </style>
-      <DesignersMainContainer style={{ marginTop: "50px", 'marginTop':'120px' }}>
-        <DesignersCardContainer style={{'marginBottom':'100px'}}>
+      <DesignersMainContainer alterationsMargin='true'>
+        <DesignersCardContainer>
           <LinkA href={"/our-creations"}>
             <DesignersMainCard >
               <TitleBrand>

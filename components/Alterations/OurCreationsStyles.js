@@ -25,7 +25,8 @@ export const OurCreationsBox = styled.div`
   background-color:white ;
   @media screen and (max-width: 400px) {
     margin-top: 20px;
-    margin:${({palomaSize}) => palomaSize && '0'} ;
+    margin-top:${({palomaSize}) => palomaSize && '0'} ;
+    margin-bottom:${({palomaSize}) => palomaSize && '0'} ;
   }
 `;
 

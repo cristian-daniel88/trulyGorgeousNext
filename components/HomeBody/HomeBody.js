@@ -105,6 +105,14 @@ function HomeBody({toggle}) {
 
 
     {/* <Letters titulo={'Truly Gorgeous'} letters={'Bridalwear'} button={'01243 788090'} cuenta={count} />   */}
+
+
+
+    
+    </BodyHome>)}
+
+    {count === 2 && (<BodyHome image={`./assets/banner${count}.jpg`} op={opaci} indx={count}>
+
     <div
     style={{
       'position':'absolute',
@@ -122,12 +130,6 @@ function HomeBody({toggle}) {
         MALCOLM HARRIS | PHOTOGRAPHY
       </p>
     </div>
-
-
-    
-    </BodyHome>)}
-
-    {count === 2 && (<BodyHome image={`./assets/banner${count}.jpg`} op={opaci} indx={count}>>
     {/* <Letters titulo={'titulo 2'} letters={'letters 2'} button={'button 2'} cuenta={count}/> */}
 
 

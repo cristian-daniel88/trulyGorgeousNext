@@ -102,24 +102,85 @@ function HomeBody({toggle}) {
     <div onMouseEnter={activateSlider} onMouseLeave={activateSlider} style={{'overflowX':'hidden'}} onClick={stopSlider}>
 
     {count === 1 && (<BodyHome image={`./assets/banner${count}.jpg`} op={opaci} indx={count} toggle={toggle}>
-      
+
 
     {/* <Letters titulo={'Truly Gorgeous'} letters={'Bridalwear'} button={'01243 788090'} cuenta={count} />   */}
+    <div
+    style={{
+      'position':'absolute',
+      'bottom':'0',
+      'right':'10px'
+    }}
+    >
+      <p
+      style={{
+        'fontSize':'10px',
+        'color':'white'
+
+      }}
+      >
+        MALCOLM HARRIS | PHOTOGRAPHY
+      </p>
+    </div>
+
+
     
     </BodyHome>)}
 
     {count === 2 && (<BodyHome image={`./assets/banner${count}.jpg`} op={opaci} indx={count}>>
     {/* <Letters titulo={'titulo 2'} letters={'letters 2'} button={'button 2'} cuenta={count}/> */}
+
+
+    <div
+    style={{
+      'position':'absolute',
+      'bottom':'0',
+      'right':'10px'
+    }}
+    >
+      <p
+      style={{
+        'fontSize':'10px',
+        'color':'white'
+
+      }}
+      >
+        MALCOLM HARRIS | PHOTOGRAPHY
+      </p>
+    </div>
     </BodyHome>)}
 
     {count === 3 && (<BodyHome image={`./assets/banner${count}.jpg`} op={opaci}  indx={count}>
     {/* <Letters  titulo={'titulo 3'}  letters={'letters3'} button={'button 3'} cuenta={count}/>  */}
+
+
+    <div
+    style={{
+      'position':'absolute',
+      'bottom':'0',
+      'right':'10px'
+    }}
+    >
+      <p
+      style={{
+        'fontSize':'10px',
+        'color':'white'
+
+      }}
+      >
+        MALCOLM HARRIS | PHOTOGRAPHY
+      </p>
+    </div>
     </BodyHome>)}
 
     <Arrows countFunction={setCount} cuenta={count}/>
     <Balls bola={count}/>
 
+
+   
+
     
+
 
     </div>
   )

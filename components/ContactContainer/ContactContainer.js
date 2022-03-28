@@ -27,6 +27,7 @@ import {
   SentDiv,
 } from "./ContactContainerStyles";
 import emailjs from 'emailjs-com';
+import { NameDesigner } from "../Designers/DesignersStyles";
 
 function ContactContainer() {
   const [name, setName] = useState("");
@@ -109,6 +110,7 @@ function ContactContainer() {
 
   return (
     <ContainerContact>
+      {/* <NameDesigner style={{'marginBottom': '20px'}}>Contact</NameDesigner> */}
       {done ? (
         <DoneContainer>
           {loading == "true" ? (

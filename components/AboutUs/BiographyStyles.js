@@ -24,13 +24,13 @@ display: block;
 `
 
 export const BoutiqueImg = styled.img`
-width: 45%;
-height:250px; 
+//width: 45%;
+//height:250px; 
 float:left ;
 display: block;
 
 @media screen and (max-width: 865px) {
-  height: 150px;
+ // height: 150px;
    
   }
 

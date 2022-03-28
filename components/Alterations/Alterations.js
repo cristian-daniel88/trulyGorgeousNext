@@ -18,6 +18,8 @@ function Alterations() {
         fontSize: "center",
         //'backgroundRepeat':'no-repeat',
         //'backgroundSize':'cover'
+        height: '70vh',
+       
       }}
     >
       <NameDesigner
@@ -32,10 +34,10 @@ function Alterations() {
         @import
         url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
       </style>
-      <DesignersMainContainer style={{ marginTop: "50px" }}>
-        <DesignersCardContainer>
+      <DesignersMainContainer style={{ marginTop: "50px", 'marginTop':'120px' }}>
+        <DesignersCardContainer style={{'marginBottom':'100px'}}>
           <LinkA href={"/our-creations"}>
-            <DesignersMainCard>
+            <DesignersMainCard >
               <TitleBrand>
                 <p className="brandTitle">Our Creations</p>
               </TitleBrand>

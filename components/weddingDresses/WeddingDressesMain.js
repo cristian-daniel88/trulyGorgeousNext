@@ -18,6 +18,7 @@ function WeddingDressesMain() {
         fontSize: "center",
         //'backgroundRepeat':'no-repeat',
         //'backgroundSize':'cover'
+       
       }}
     >
       <NameDesigner
@@ -32,8 +33,8 @@ function WeddingDressesMain() {
         @import
         url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
       </style>
-      <DesignersMainContainer style={{ marginTop: "50px" }}>
-        <DesignersCardContainer>
+      <DesignersMainContainer style={{ marginTop: "50px", 'marginTop':'100px' }}>
+        <DesignersCardContainer style={{'marginBottom':'100px'}}>
           <LinkA href={"/fairytale"}>
             <DesignersMainCard>
               <TitleBrand>

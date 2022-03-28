@@ -99,8 +99,8 @@ function Nav() {
       </TelephoneNumber2>
 
       <ContainerLogoAndH2>
-        <LinkA href={"/"} onClick={toggleMenu}>
-          <LogoContainer>
+        <LinkA href={"/"} >
+          <LogoContainer onClick={toggleMenu}>
             <Logo />
           </LogoContainer>
         </LinkA>

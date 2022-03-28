@@ -29,7 +29,8 @@ function PriceList() {
 
         
       <ContainerLogoAndH2 style={{
-        'marginBottom':'40px'
+        'marginBottom':'40px',
+        'zIndex':'0'
       }}>
        
           <LogoContainer>

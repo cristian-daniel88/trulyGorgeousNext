@@ -19,7 +19,12 @@ function ToggleMenu() {
   const toggle = useSelector((state) => state.hamburguer.hidden);
   const dispatch = useDispatch();
   const toggleMenu = () => {
-    dispatch(toggleHamburguerHidden());
+    if (toggle) {
+      dispatch(toggleHamburguerHidden(false));
+      return
+     }
+     dispatch(toggleHamburguerHidden(true));
+     return
   };
 
   return (

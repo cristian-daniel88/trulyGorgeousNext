@@ -35,13 +35,14 @@ import {
 
 function Nav() {
   const [focuss, setFocuss] = useState(true);
-
+  
   const dispatch = useDispatch();
   const popAbout = useSelector((state) => state.popUp.hover1);
   const popUpWed = useSelector((state) => state.popUp.hover3);
   const popUpAlt = useSelector((state) => state.popUp.hover2);
   const popUpDes = useSelector((state) => state.popUp.hover4);
-
+  const toggle = useSelector((state) => state.hamburguer.hidden);
+  
   const popUpAboutIn = () => {
     dispatch(hoverPopUpAboutUs(true));
     setFocuss(false);
@@ -82,8 +83,13 @@ function Nav() {
     setFocuss(false);
   };
 
-  const toggleMenu = () => {
-    dispatch(toggleHamburguerHidden());
+  const toggleMenu = (boleano) => {
+    if (toggle) {
+     dispatch(toggleHamburguerHidden(false));
+     return
+    }
+    dispatch(toggleHamburguerHidden(true));
+    return
   };
 
   const fucusHome = () => {
@@ -99,11 +105,11 @@ function Nav() {
       </TelephoneNumber2>
 
       <ContainerLogoAndH2>
+          <LogoContainer >
         <LinkA href={"/"} >
-          <LogoContainer onClick={toggleMenu}>
-            <Logo />
-          </LogoContainer>
+            <Logo  onClick={() => dispatch(toggleHamburguerHidden(false))} />
         </LinkA>
+          </LogoContainer>
 
         <H1Container>
           <Designer>DESIGNER & BESPOKE BRIDAL WEAR</Designer>

@@ -33,7 +33,7 @@ function Elegant() {
         <CartGrid>
           { weddingDresses[3].models.map((v, i) => (
 
-            <Cart img={v.imgs} key={i} onClick={()=> click(v.imgs[0], true)} style={{'backgroundRepeat':'no-repeat','backgroundSize':'cover'}}>
+            <Cart img={v.imgs} key={i} onClick={()=> click(v.imgs[0], true)} >
               
             </Cart>
           ))}

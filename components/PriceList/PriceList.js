@@ -1,5 +1,6 @@
 import React from "react";
 import { NameDesigner } from "../Designers/DesignersStyles";
+import { ContainerLogoAndH2, Designer, H1Container, LinkA, Logo, LogoContainer } from "../Nav/NavStyles";
 import {
   Price,
   PriceDetails,
@@ -25,6 +26,23 @@ function PriceList() {
 
 
       <PriceListBox>
+
+        
+      <ContainerLogoAndH2 style={{
+        'marginBottom':'40px'
+      }}>
+       
+          <LogoContainer>
+            <Logo style={{'width':'50%','marginBottom':'10px'}}/>
+          </LogoContainer>
+       
+
+        <H1Container >
+          <Designer style={{'userSelect':'text'}}>DESIGNER & BESPOKE BRIDAL WEAR</Designer>
+        </H1Container>
+      </ContainerLogoAndH2>
+
+
         <PriceListBoxTitle>Wedding</PriceListBoxTitle>
 
         <PriceListBoxContainer

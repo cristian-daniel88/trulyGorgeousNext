@@ -18,7 +18,7 @@ export const PriceListBox = styled.div`
   background: white;
   margin: auto;
   border-radius: 10px;
-  border: double 20px rgba(0,0,0,0.2);
+  border: double 15px rgba(0,0,0,0.2);
   padding: 20px;
   padding-top: 25px;
   margin-bottom: 50px;

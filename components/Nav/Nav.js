@@ -127,7 +127,7 @@ function Nav() {
             <Ul>
                 <Li ><LinkAHome focuss={focuss == true ? 'true' : 'false'} href={'/'}>Home</LinkAHome></Li>
 
-                <Li onClick={fucusHome} onMouseEnter={popUpAboutIn} onMouseLeave={popUpAboutOut}>
+                <Li onClick={fucusHome}>
                 <LinkA href={'/our-boutique'}>
                 <div onClick={popUpAboutOut}>  
                 About Us 

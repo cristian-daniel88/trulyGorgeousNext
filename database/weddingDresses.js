@@ -449,7 +449,7 @@ export const weddingDresses = [
             
             {
                 imgs: [
-                    'https://res.cloudinary.com/truly-gorgeous/image/upload/v1647433122/weddingDresses/elegant/18452-WILFRIDA-scaled_ldur7m.jpg',
+                    'https://res.cloudinary.com/truly-gorgeous/image/upload/v1648463420/weddingDresses/elegant/banner3bis_shxtfn.jpg',
                     
                 ]
             },

@@ -9,9 +9,10 @@ import AssetsBottom from "../components/AssetsBottom/AssetsBottom";
 import Cover from "../components/Cover/Cover";
 import PalomaBlanca from "../components/Designers/PalomaBlanca";
 
+
 import Footer from "../components/Footer/Footer";
 import Nav from "../components/Nav/Nav";
-import PopUpPhotoDesigner from "../components/PopUpPhotoDesigner/PopUpPhotoDesigner";
+
 import ToggleMenu from "../components/ToggleMenu/ToggleMenu";
 import Top from "../components/Top/Top";
 import { persistor, store } from "../redux/store";

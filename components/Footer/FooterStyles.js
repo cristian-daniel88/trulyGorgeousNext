@@ -7,7 +7,9 @@ export const Footer1 = styled.footer`
 width: 100%;
 height: auto;
 background: #333333;
-padding: 0 10%;
+padding: 0 5%;
+//padding: 0 10% ;
+padding-bottom:5% ;
 
 display: flex;
 flex-wrap: wrap;
@@ -15,7 +17,8 @@ flex-wrap: wrap;
 `
 
 export const FooterBox1 = styled.div`
-width: 25%;
+width: 20%;
+//width:25% ;
 height: 200px;
 //border: solid 1px black;
 display: flex;
@@ -65,7 +68,7 @@ user-select: text;
 
 export const FooterBox2 = styled.div`
 
-width: 25%;
+width: 20%;
 height: 200px;
 //border: solid 1px black;
 display: flex;
@@ -75,11 +78,14 @@ min-width: 200px;
 display: flex;
 justify-content: center;
 align-items: center;
+height:${({hours}) => hours && `auto`};
+
 
 
 @media screen and (max-width: 865px) {
  width: 100%;
  margin-top: 0px;
+ margin-bottom:${({hours}) => hours && `50px`};
    
   }
 
@@ -115,12 +121,26 @@ text-align: center;
 margin-top: 20px;
 user-select: text;
 
+text-align:${({hours}) => hours && `left`};
+font-size:${({hours}) => hours && `13px`};
+margin-left: ${({hours}) => hours && `35px`} ;
+
+
+
+@media screen and (max-width: 865px) {
+  text-align:${({hours}) => hours && `center`};
+font-size:${({hours}) => hours && `13px`};
+margin-left: ${({hours}) => hours && `0`} ;
+
+   
+  }
+
 `
 
 
 
 export const FooterBox3 = styled.div`
-width: 25%;
+width: 20%;
 height: 200px;
 //border: solid 1px black;
 display: flex;
@@ -141,7 +161,7 @@ align-items: center;
 `
 
 export const FooterBox4 = styled.div`
-width: 25%;
+width: 20%;
 height: 200px;
 //border: solid 1px black;
 display: flex;

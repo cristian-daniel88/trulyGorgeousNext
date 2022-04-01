@@ -19,7 +19,7 @@ flex-wrap: wrap;
 export const FooterBox1 = styled.div`
 width: 20%;
 //width:25% ;
-height: 200px;
+//height: 200px;
 //border: solid 1px black;
 display: flex;
 justify-content: center;
@@ -29,9 +29,15 @@ display: flex;
 justify-content: center;
 align-items: center;
 
+
 @media screen and (max-width: 865px) {
  width: 100%;
  margin-top: 0px;
+
+
+
+
+ margin-bottom:30px ;
 
    
   }
@@ -69,7 +75,7 @@ user-select: text;
 export const FooterBox2 = styled.div`
 
 width: 20%;
-height: 200px;
+//height: 200px;
 //border: solid 1px black;
 display: flex;
 justify-content: center;
@@ -85,8 +91,10 @@ height:${({hours}) => hours && `auto`};
 @media screen and (max-width: 865px) {
  width: 100%;
  margin-top: 0px;
- margin-bottom:${({hours}) => hours && `50px`};
-   
+ 
+
+ margin-bottom:30px ;
+
   }
 
 `

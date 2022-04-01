@@ -26,6 +26,7 @@ import {
   SentContainer,
   SentDiv,
   BookingApoiment,
+  OpeningHoursDiv,
 } from "./ContactContainerStyles";
 import emailjs from "emailjs-com";
 import { NameDesigner } from "../Designers/DesignersStyles";
@@ -251,10 +252,16 @@ function ContactContainer() {
                   <PhoneContainer style={{
                   'width':'100%',
                   "padding":'0 5px',
-                  'paddingBottom':'10px'
+                  'paddingBottom':'10px',
+                  'display':'flex',
+                  //'justifyContent':'center'
+                  
                   
                 }}>
-                    <BoldContact style={{ 'fontSize':'14px'}}>Opening Hours:</BoldContact> Sunday: Closed; Monday: 10 am to 5pm; Tuesday: 10 am to 5pm; Wednesday: 10 am to 5pm; Thursday: 10 am to 5pm; Friday: 10 am to 5pm; Sunday: 10 am to 5pm.
+                  <OpeningHoursDiv>
+
+                    <BoldContact style={{ 'fontSize':'14px'}}>Opening Hours:</BoldContact><br/> Sunday: Closed.<br/>Monday: 10 am to 5pm. <br/> Tuesday: 10 am to 5pm.<br/> Wednesday: 10 am to 5pm. <br/> Thursday: 10 am to 5pm.<br/> Friday: 10 am to 5pm.<br/> Saturday: 10 am to 5pm.
+                  </OpeningHoursDiv>
                   </PhoneContainer>
 
                   

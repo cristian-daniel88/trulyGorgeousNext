@@ -281,3 +281,17 @@ export const BookingApoiment = styled.p`
   margin-bottom:10px ;
   padding:10px ;
 `;
+
+export const OpeningHoursDiv = styled.div`
+ background-color:#f0f4f8;
+ display:block;
+ width:55%;
+ border: solid 1px #e8d8d8;
+ padding:10px ;
+ border-radius:10px ;
+
+ @media screen and (max-width: 865px) {
+    width: 100%;
+  }
+
+`

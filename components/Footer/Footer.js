@@ -38,7 +38,7 @@ function Footer() {
 
       <FooterBox2 hours='true'>
         <FooterBox2Container>
-          <P3>Office Hours</P3>
+          <P3>Opening Hours</P3>
           <P4 hours='true'>
             <div>Monday: 10hs to 5pm</div><br/>
             <div>Tuesday: 10hs to 5pm</div><br/>

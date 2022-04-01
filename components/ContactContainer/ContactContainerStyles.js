@@ -75,6 +75,7 @@ export const ContactDetailsContainer = styled.div`
   height: auto;
   border: solid 1px #e8d8d8;
   background-color: white;
+ 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -93,8 +94,10 @@ export const PhoneContainer = styled.div`
   font-size: 13px;
   color: #747474;
   padding-top: 10px;
+  padding-top:${({openinghours}) => openinghours && '0'} ;
   padding-bottom: 10px;
   padding-left: 5px;
+ 
 
   @media screen and (max-width: 1200px) {
     width: 100%;

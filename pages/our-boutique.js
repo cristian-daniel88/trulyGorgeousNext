@@ -16,6 +16,7 @@ import AssetsBottom from '../components/AssetsBottom/AssetsBottom';
 import PopUpPhotoDesigner from '../components/PopUpPhotoDesigner/PopUpPhotoDesigner';
 
 import Biography from '../components/AboutUs/Biography';
+import PopUpPhotoDesignerOurCreations from '../components/Alterations/PopUpPhotoDesignerOurCreations';
 
 function biography() {
   return (
@@ -32,7 +33,8 @@ function biography() {
     <Nav></Nav>
     <Top/>
     <Cover/>
-    <PopUpPhotoDesigner />
+ 
+    <PopUpPhotoDesignerOurCreations />
 
     <ToggleMenu/>
  

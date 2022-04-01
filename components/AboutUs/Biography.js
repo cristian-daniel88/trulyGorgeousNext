@@ -7,8 +7,11 @@ import {
   BiographyContainer,
   BoldTitle,
   BoutiqueImg,
+  DivGrid,
   ParrafoPerfil,
   PhotoPerfil,
+  PhotosAboutUs,
+  PhotosGrid,
 } from "./BiographyStyles";
 
 
@@ -68,7 +71,23 @@ function Biography() {
             Gorgeous on their special day.
           </p>
         </ParrafoPerfil>
+       
+
+
       </BiographyContainer>
+
+      <DivGrid>
+
+      <PhotosGrid>
+            <PhotosAboutUs img="./assets/aboutUs/0.jpg" onClick={() => click("./assets/aboutUs/0.jpg", true)}/>
+            <PhotosAboutUs img="./assets/aboutUs/1.jpg" onClick={() => click("./assets/aboutUs/1.jpg", true)}/>
+            <PhotosAboutUs img="./assets/aboutUs/2.jpg" onClick={() => click("./assets/aboutUs/2.jpg", true)}/>
+            <PhotosAboutUs img="./assets/aboutUs/3.jpg" onClick={() => click("./assets/aboutUs/3.jpg", true)}/>
+            <PhotosAboutUs img="./assets/aboutUs/4.jpg" onClick={() => click("./assets/aboutUs/4.jpg", true)}/>
+        </PhotosGrid>
+
+      </DivGrid>
+
     </DesignersContainer>
   );
 }

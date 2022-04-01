@@ -289,6 +289,7 @@ export const OpeningHoursDiv = styled.div`
  border: solid 1px #e8d8d8;
  padding:10px ;
  border-radius:10px ;
+ user-select:text;
 
  @media screen and (max-width: 865px) {
     width: 100%;

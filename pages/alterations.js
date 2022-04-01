@@ -20,7 +20,7 @@ function alterations () {
     <>
     <Head>
       <title>
-        Truly Gorgeus | Alterations
+        Truly Gorgeous | Alterations
       </title>
       
     </Head>

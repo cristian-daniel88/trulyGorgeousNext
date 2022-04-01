@@ -21,7 +21,7 @@ class MyDocument extends Document {
           />
           <link rel="apple-touch-icon" href="https://res.cloudinary.com/truly-gorgeous/image/upload/v1647860031/meta/iconoBig_p2cfxb.jpg" />
         
-          <title>Truly Gorgeus | Wedding Dresses</title>
+          <title>Truly Gorgeous | Wedding Dresses</title>
           <meta
             name="description"
             content="Located in Chichester, West Sussex, we are an independent retailer offering brides a selection of beautiful designer and bespoke bridal gowns and accessories."

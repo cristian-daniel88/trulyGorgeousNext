@@ -19,7 +19,7 @@ function priceList() {
     <>
     <Head>
       <title>
-        Truly Gorgeus | Price List
+        Truly Gorgeous | Price List
       </title>
     </Head>
     <Provider store={store}>

@@ -22,7 +22,7 @@ function victoriaJane() {
       <Provider store={store}>
         <PersistGate persistor={persistor}>
           <Head>
-            <title>Truly Gorgeus | Victoria Jane</title>
+            <title>Truly Gorgeous | Victoria Jane</title>
           
           </Head>
           <>

@@ -19,7 +19,7 @@ function designers () {
     <>
     <Head>
       <title>
-        Truly Gorgeus | Designers
+        Truly Gorgeous | Designers
       </title>
       
     </Head>

@@ -21,7 +21,7 @@ function ourBrides() {
     <>
     <Head>
       <title>
-        Truly Gorgeus | Our Brides
+        Truly Gorgeous | Our Brides
       </title>
     </Head>
     <Provider store={store}>

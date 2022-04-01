@@ -21,7 +21,7 @@ function alterations () {
     <>
     <Head>
       <title>
-        Truly Gorgeus | About Us
+        Truly Gorgeous | About Us
       </title>
       
     </Head>

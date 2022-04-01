@@ -18,7 +18,7 @@ function contact() {
     <>
     <Head>
       <title>
-        Truly Gorgeus | Contact
+        Truly Gorgeous | Contact
       </title>
     </Head>
     <Provider store={store}>

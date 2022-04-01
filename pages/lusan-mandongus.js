@@ -24,7 +24,7 @@ function lusanMandongus() {
       <Provider store={store}>
         <PersistGate persistor={persistor}>
           <Head>
-            <title>Truly Gorgeus | Lusan Mandongus</title>
+            <title>Truly Gorgeous | Lusan Mandongus</title>
           
           </Head>
           <>

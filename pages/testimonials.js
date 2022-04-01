@@ -22,7 +22,7 @@ function ourBrides() {
     <>
     <Head>
       <title>
-        Truly Gorgeus | Testimonials
+        Truly Gorgeous | Testimonials
       </title>
     </Head>
     <Provider store={store}>

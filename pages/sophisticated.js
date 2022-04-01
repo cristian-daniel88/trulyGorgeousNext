@@ -26,7 +26,7 @@ function romantic() {
       <Provider store={store}>
         <PersistGate persistor={persistor}>
           <Head>
-            <title>Truly Gorgeus | Sophisticated</title>
+            <title>Truly Gorgeous | Sophisticated</title>
           
           </Head>
           <>

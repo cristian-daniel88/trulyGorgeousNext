@@ -23,7 +23,7 @@ function biography() {
     <>
     <Head>
       <title>
-        Truly Gorgeus | Our Boutique
+        Truly Gorgeous | Our Boutique
       </title>
     </Head>
     <Provider store={store}>

@@ -24,7 +24,7 @@ function fairytale() {
       <Provider store={store}>
         <PersistGate persistor={persistor}>
           <Head>
-            <title>Truly Gorgeus | Fairytale</title>
+            <title>Truly Gorgeous | Fairytale</title>
           
           </Head>
           <>

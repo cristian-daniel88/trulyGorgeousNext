@@ -20,7 +20,7 @@ function designers () {
     <>
     <Head>
       <title>
-        Truly Gorgeus | Wedding Dresses
+        Truly Gorgeous | Wedding Dresses
       </title>
       
     </Head>

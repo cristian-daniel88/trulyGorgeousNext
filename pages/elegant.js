@@ -25,7 +25,7 @@ function elegant() {
       <Provider store={store}>
         <PersistGate persistor={persistor}>
           <Head>
-            <title>Truly Gorgeus | Elegant</title>
+            <title>Truly Gorgeous | Elegant</title>
           
           </Head>
           <>

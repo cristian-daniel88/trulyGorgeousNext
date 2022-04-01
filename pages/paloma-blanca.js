@@ -24,7 +24,7 @@ function ronaldJoyce() {
       <Provider store={store}>
         <PersistGate persistor={persistor}>
           <Head>
-            <title>Truly Gorgeus | Paloma Blanca </title>
+            <title>Truly Gorgeous | Paloma Blanca </title>
           
           </Head>
           <>

@@ -22,7 +22,7 @@ function ourCreations() {
     <>
     <Head>
       <title>
-        Truly Gorgeus | Our Creations
+        Truly Gorgeous | Our Creations
       </title>
     </Head>
     <Provider store={store}>

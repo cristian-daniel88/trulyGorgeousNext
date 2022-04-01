@@ -35,7 +35,7 @@ function index() {
     <>
     <Head>
       <title>
-        Truly Gorgeus | Wedding Dresses
+        Truly Gorgeous | Wedding Dresses
       </title>
     </Head>
       <Provider store={store}>
